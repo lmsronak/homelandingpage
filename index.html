@@ -1,0 +1,4352 @@
+<?php
+/*
+Template Name: Custom Home
+*/
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Page Tittle -->
+  <title>Paresh Goshar - ACMOS Lecher Antenna Training</title>
+
+  <!-- SEO -->
+  <!-- Google SEO Verification -->
+  <!-- <meta name="google-site-verification" content="HZLTW0OfYXhuA4uumJgpwIBEFRm4iQ-cx5m13J-grPI" /> -->
+
+  <!-- Binge SEO Verification -->
+  <!-- <meta name="msvalidate.01" content="267888597A4DF2A47D413FABF6DC68C0" /> -->
+
+  <!-- HTML Meta Tags -->
+ <!-- <title>Book Collection WebApp - Your Daily Tool </title> -->
+  <!-- <meta name="description" 
+    content="The Book Collection web app is a simple yet effective tool designed to help users keep track of books they wish to buy. It enables users to store relevant details about books they come across, ensuring they don't forget about their interests.">
+  <meta name="author" content="Ronak">
+  <meta property="profile:username" content="Ronak" />
+  <meta name="keywords"
+    content="book,bookcollection ,book collection app, Web Design, Web Development,html,css,ronak,js,Book Collection WebApp - Your Daily Tool"> -->
+
+
+  
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="180x180"
+    href="https://ecourses.worldonvastu.com/wp-content/uploads/2024/09/android-chrome-192x192-1.png">
+  <link rel="icon" type="image/png" sizes="32x32"
+    href="https://ecourses.worldonvastu.com/wp-content/uploads/2024/09/favicon-32x32-1.png">
+  <link rel="icon" type="image/png" sizes="16x16"
+    href="https://ecourses.worldonvastu.com/wp-content/uploads/2024/09/favicon-16x16-1.png">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Remix Icon -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Outfit:wght@100..900&display=swap"
+    rel="stylesheet" />
+
+  <!-- Scroll Reaveal Script -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+  <!-- StyleSheet -->
+  <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet" />
+
+  <!-- <link href="./Assets/CSS/hamburger.css" rel="stylesheet"> -->
+  <style type="text/css">
+    .hamburger {
+      padding: 15px 15px;
+      display: inline-block;
+      cursor: pointer;
+      transition-property: opacity, filter;
+      transition-duration: 0.15s;
+      transition-timing-function: linear;
+      font: inherit;
+      color: inherit;
+      text-transform: none;
+      background-color: transparent;
+      border: 0;
+      margin: 0;
+      overflow: visible;
+    }
+
+    .hamburger:hover {
+      opacity: 0.7;
+    }
+
+    .hamburger.is-active:hover {
+      opacity: 0.7;
+    }
+
+    .hamburger.is-active .hamburger-inner,
+    .hamburger.is-active .hamburger-inner::before,
+    .hamburger.is-active .hamburger-inner::after {
+      background-color: #000;
+    }
+
+    .hamburger-box {
+      width: 40px;
+      height: 24px;
+      display: inline-block;
+      position: relative;
+    }
+
+    .hamburger-inner {
+      display: block;
+      top: 50%;
+      margin-top: -2px;
+    }
+
+    .hamburger-inner,
+    .hamburger-inner::before,
+    .hamburger-inner::after {
+      width: 40px;
+      height: 4px;
+      background-color: #000;
+      border-radius: 4px;
+      position: absolute;
+      transition-property: transform;
+      transition-duration: 0.15s;
+      transition-timing-function: ease;
+    }
+
+    .hamburger-inner::before,
+    .hamburger-inner::after {
+      content: "";
+      display: block;
+    }
+
+    .hamburger-inner::before {
+      top: -10px;
+    }
+
+    .hamburger-inner::after {
+      bottom: -10px;
+    }
+
+
+    /*
+   * Slider
+   */
+    .hamburger--slider .hamburger-inner {
+      top: 2px;
+    }
+
+    .hamburger--slider .hamburger-inner::before {
+      top: 10px;
+      transition-property: transform, opacity;
+      transition-timing-function: ease;
+      transition-duration: 0.15s;
+    }
+
+    .hamburger--slider .hamburger-inner::after {
+      top: 20px;
+    }
+
+    .hamburger--slider.is-active .hamburger-inner {
+      transform: translate3d(0, 10px, 0) rotate(45deg);
+    }
+
+    .hamburger--slider.is-active .hamburger-inner::before {
+      transform: rotate(-45deg) translate3d(-5.71429px, -6px, 0);
+      opacity: 0;
+    }
+
+    .hamburger--slider.is-active .hamburger-inner::after {
+      transform: translate3d(0, -20px, 0) rotate(-90deg);
+    }
+  </style>
+
+  <!-- <link rel="stylesheet" href="./Assets/CSS/global.css" /> -->
+  <style type="text/css">
+    /* ********************* */
+    /* ---- General Css ---- */
+    /* ********************* */
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "DM Sans", sans-serif;
+      /* font-family: "Outfit", sans-serif; */
+      scroll-behavior: smooth;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+
+    input {
+      width: 100%;
+      outline: none;
+      border: none;
+    }
+
+    /* Chrome, Safari, Edge, Opera */
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+    /* Firefox */
+    input[type=number] {
+      -moz-appearance: textfield;
+    }
+
+    button {
+      font-size: inherit;
+      font-weight: inherit;
+      outline: none;
+      border: none;
+    }
+
+    i {
+      color: inherit;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+      cursor: pointer;
+    }
+
+    .flex {
+      display: flex;
+    }
+
+    .gap-12 {
+      gap: 12px;
+    }
+
+    .align-item-c {
+      align-items: center;
+    }
+
+    .center {
+      justify-content: center;
+      align-items: center;
+    }
+
+    .space-between {
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .flex-start {
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    .justify-end {
+      justify-content: flex-end;
+    }
+
+    .section-heading {
+      font-size: 52px;
+      color: var(--white);
+      text-align: center;
+      margin-bottom: 32px;
+
+      span {
+        color: var(--orange);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .section-heading {
+        font-size: 44px;
+      }
+    }
+
+    @media (max-width: 440px) {
+      .section-heading {
+        font-size: 36px;
+      }
+    }
+
+    .section-container {
+      max-width: 1200px;
+    }
+
+
+
+    /* ********************* */
+    /* ---- Root Elements ---- */
+    /* ********************* */
+
+    :root {
+      /* ----------- Colors ----------- */
+
+      --black: #202020;
+      --white: #ffff;
+      --orange: #fa513a;
+      /* --orange: rgb(252, 115, 36); */
+      --dark-blue: #03052a;
+      --light-blue: #062d6e;
+      --grey-bg: #F9F9F9;
+      --grey-line: #DCDCDC;
+      --grey-text: #898989;
+
+      --navBar-bg-color: rgba(163, 162, 162, 0.183);
+      --navBar-logo-bg-color: rgba(255, 255, 255, 0.301);
+
+      --landing-page-highlighted: rgba(255, 255, 255, 0.1);
+      --facebook: #1aa5fa;
+      --instagram: linear-gradient(to right,
+          #833ab4, #fd1d1d, #fcb045);
+      --youtube: #fe0908;
+
+
+
+      /* ---------- Font Weight ---------- */
+
+      --regular: 400;
+      --medium: 500;
+      --semibold: 600;
+      --bold: 700;
+
+      /* ------------- Shadows -------------*/
+
+      --dashboard-tiles-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.08);
+      --form-overflow-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+      /*  ------------- Transition  --------------*/
+      --transition-5: 0.5s ease;
+      --transition-3: 0.3s ease;
+      --transition-2: 0.2s ease;
+    }
+  </style>
+
+  <!-- <link rel="stylesheet" href="style.css" /> -->
+  <style type="text/css">
+    /*******************************/
+    /* Main Wrapper Css ( Layout ) */
+    /*******************************/
+
+    #Main {
+      max-width: 100vw;
+      min-height: 100vh;
+      user-select: none;
+    }
+
+    #Wrapper {
+      width: 100%;
+      height: 100%;
+      overflow-x: hidden;
+    }
+
+    /*******************************/
+    /* ---------- NavBar ---------- */
+    /*******************************/
+
+
+    header {
+      position: relative;
+      z-index: 998;
+      max-width: 100vw;
+    }
+
+    .header-container {
+      position: absolute;
+      left: 0;
+      right: 0;
+      transform: translate(0, 25px);
+      padding: 0 64px;
+    }
+
+    .header-container .nav-items {
+      max-width: 1200px;
+      margin: 0 auto;
+      border-radius: 20px;
+      padding: 8px 32px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: var(--navBar-bg-color);
+      position: relative;
+
+      box-shadow: 0 8px 32px 0 rgba(31, 34, 75, 0.37);
+      backdrop-filter: blur(4px);
+      -webkit-backdrop-filter: blur(4px);
+    }
+
+    header .logo {
+      width: 40px;
+      background-color: var(--navBar-logo-bg-color);
+      display: flex;
+      padding: 4px;
+      border-radius: 10px;
+      align-items: center;
+      background-size: 200%;
+    }
+
+    header nav {
+      display: flex;
+      gap: 24px;
+    }
+
+    header nav a {
+      opacity: 0.6;
+      color: #333;
+      color: var(--white);
+      font-weight: var(--medium);
+      transition: opacity var(--transition-2);
+    }
+
+    header nav a:hover {
+      opacity: 1;
+    }
+
+    header .enroll-btn {
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-weight: var(--medium);
+      background-color: var(--orange);
+      color: var(--white);
+    }
+
+    header .header-container .hamburger {
+      display: none;
+    }
+
+    header .header-container .mobile-nav-items {
+      display: none;
+    }
+
+    /*******************************/
+    /* Hero-Section */
+    /*******************************/
+
+    #hero-section {
+      max-width: 100vw;
+      padding: 0 64px;
+      background: url(https://ecourses.worldonvastu.com/wp-content/uploads/2024/09/HeroSection.png) no-repeat center;
+      background-size: cover;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+    }
+
+    #hero-section .container {
+      max-width: 1200px;
+      padding-top: 12rem;
+      display: grid;
+      grid-template-columns: 1fr auto;
+    }
+
+    #hero-section .content {
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+      padding-bottom: 32px;
+    }
+
+    #hero-section .content .highlighted {
+      width: fit-content;
+      color: var(--white);
+      padding: 4px 12px;
+      font-weight: 200;
+      border-radius: 4px;
+      background-color: var(--landing-page-highlighted);
+      font-size: 40px;
+    }
+
+    #hero-section .content h1 {
+      color: var(--white);
+      font-size: 36px;
+      font-weight: var(--bold);
+      text-transform: capitalize;
+    }
+
+    #hero-section .content .note {
+      color: var(--white);
+      font-weight: var(--regular);
+      font-size: 16px;
+    }
+
+    #hero-section .content h1 .animated-text-holder {
+      overflow: hidden;
+      color: var(--orange);
+      text-transform: none;
+      display: flex;
+      flex-direction: column;
+      height: 60px;
+      position: relative;
+      width: 100%;
+    }
+
+    #hero-section .content h1 .animated-text-holder .animated-text {
+      font-size: 44px;
+      position: absolute;
+    }
+
+    #hero-section .content h1 .animated-text-holder span.word {
+      display: inline-block;
+    }
+
+    #hero-section .content .action-btn {
+      padding: 16px 32px;
+      background-color: var(--orange);
+      color: var(--white);
+      border-radius: 50px;
+      font-weight: var(--medium);
+      font-size: 20px;
+      width: fit-content;
+      text-align: center;
+    }
+
+
+    #hero-section .image-holder {
+      position: relative;
+    }
+
+    #hero-section .image-holder img {
+      width: 525px;
+    }
+
+    #hero-section .image-holder .arrow .play {
+      position: absolute;
+      height: 50px;
+      width: 50px;
+      background-color: var(--white);
+      border-radius: 50%;
+      top: 62%;
+      left: 50%;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 26px;
+      color: var(--orange);
+      box-shadow: var(--orange) 0px 7px 29px 0px;
+      cursor: pointer;
+    }
+
+    #hero-section .image-holder .arrow img {
+      width: 200px;
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: scaleX(-1) translateY(-50%);
+    }
+
+    #hero-section .image-holder .arrow .arrow-text {
+      position: absolute;
+      top: 25%;
+      right: 0;
+      transform: translateX(50%);
+      color: var(--white);
+    }
+
+    /*******************************/
+    /* Video-Section */
+    /*******************************/
+
+    #video-section {
+      max-width: 100vw;
+      background-color: #fff;
+    }
+
+    #video-section .video-section-container {
+      position: relative;
+      padding: 8rem 64px;
+      width: 100%;
+      display: grid;
+      place-items: center;
+      overflow: hidden;
+    }
+
+    #video-section .video-section-container .video-holder {
+      z-index: 1;
+      height: 30vw;
+      width: 60vw;
+      border-radius: 20px;
+      overflow: hidden;
+    }
+
+    #video-section .background-element {
+      background: linear-gradient(0deg,
+          var(--light-blue) 50%,
+          var(--dark-blue) 100%);
+      width: 150vw;
+      height: 800px;
+      border-radius: 50%;
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, 0);
+      top: 85%;
+
+    }
+
+    /*******************************/
+    /* Slider-Section */
+    /*******************************/
+
+    #slider-section {
+      max-width: 100vw;
+      padding: 0 64px;
+      background: linear-gradient(0deg, var(--dark-blue) 0%, var(--light-blue) 70%);
+    }
+
+    #slider-section .slider-section-container {
+      padding: 50px 0;
+      margin: 0 auto;
+      max-width: 1200px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 32px;
+    }
+
+    #slider-section .image-carousel-holder {
+      display: flex;
+      justify-content: center;
+    }
+
+
+    #slider-section .splide__arrows {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      top: 0;
+    }
+
+    #slider-section .splide img {
+      width: 100%;
+      border-radius: 8px;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    #slider-section .splide .splide__arrows .left-arrow {
+      left: -3em;
+    }
+
+    #slider-section .splide .splide__arrows .left-arrow svg {
+      rotate: 180deg;
+    }
+
+    #slider-section .splide .splide__arrows .right-arrow {
+      right: -3em;
+    }
+
+    #slider-section .splide .splide__pagination {
+      display: none;
+    }
+
+    .slider-section-container .content-holder {
+      color: var(--white);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      gap: 24px;
+    }
+
+    .slider-section-container .content-holder .content-heading {
+      display: flex;
+      align-items: baseline;
+      gap: 12px;
+    }
+
+    .slider-section-container .content-holder .content-heading p {
+      color: #c2c2c2;
+      font-size: 16px;
+    }
+
+    .slider-section-container .content-holder .content-heading .line {
+      background: linear-gradient(to right, #c2c2c250, #c2c2c20e);
+      width: 100%;
+      height: 1px;
+    }
+
+    #slider-section .section-line {
+      background: radial-gradient(#c2c2c245, #c2c2c207);
+      width: 95%;
+      height: 1px;
+      margin: 0 auto;
+    }
+
+    .slider-section-container .content-holder h2 {
+      font-size: 36px;
+      font-weight: var(--bold);
+    }
+
+    .slider-section-container .content-data {
+      display: flex;
+      gap: 24px;
+    }
+
+    .slider-section-container .content-data .section-icon {
+      border: 3px solid #ca3d2b;
+      min-width: 50px;
+      min-height: 50px;
+      border-radius: 30px;
+      height: fit-content;
+      background: radial-gradient(var(--orange), #f47766);
+      box-shadow: inset 0 0 5px 0 var(--orange), 0 8px 24px -8px #f47766ca;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 24px;
+    }
+
+    .slider-section-container .content-data h2 span {
+      color: var(--orange);
+    }
+
+    .slider-section-container .content-data p {
+      font-size: 22px;
+      font-weight: var(--regular);
+      color: #c2c2c2;
+      margin-top: 24px;
+    }
+
+    /*******************************/
+    /******** Course-Section ********/
+    /*******************************/
+
+    #course {
+      max-width: 100vw;
+      padding: 0 64px;
+      background: linear-gradient(71deg, #080509, #1a171c, #080509);
+      display: flex;
+    }
+
+    #course .course-section-container {
+      height: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 100px 0;
+    }
+
+    .course-section-container .course-tags {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .course-section-container .course-tags span {
+      border: 1px solid var(--grey-text);
+      color: var(--white);
+      padding: 8px 24px;
+      border-radius: 5px;
+      text-align: center;
+      cursor: pointer;
+      transition: all var(--transition-3);
+    }
+
+    .course-section-container .course-tags span:hover {
+      background-color: var(--orange);
+      border-color: var(--orange);
+    }
+
+    .course-section-container .course-tags span.active {
+      background-color: var(--orange);
+      border-color: var(--orange);
+    }
+
+    .course-section-container .course-holder {
+      margin-top: 32px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+
+    .course-section-container .course-holder .course-wrapper {
+      display: flex;
+      overflow: hidden;
+    }
+
+    @keyframes rotate-gradient {
+      to {
+        rotate: 360deg;
+      }
+    }
+
+    .course-section-container .course-holder .course {
+      background: linear-gradient(71deg, #080509, #1a171c, #080509);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: baseline;
+      padding: 12px;
+      gap: 16px;
+      border-radius: 10px;
+      overflow: visible;
+      position: relative;
+      transform-style: preserve-3d;
+      margin: 1px;
+    }
+
+    .course-section-container .course-holder .course::after {
+      transform: translateZ(-1px) !important;
+      position: absolute;
+      top: -1px;
+      bottom: -1px;
+      left: -1px;
+      right: -1px;
+      content: '';
+      border-radius: inherit;
+      background: linear-gradient(71deg, #0d1212, var(--orange), #0d1212);
+    }
+
+    .course-section-container .course-holder .course .img-holder {
+      overflow: hidden;
+      object-fit: cover;
+      border-radius: 10px;
+      display: flex;
+    }
+
+    .course-section-container .course-holder .course .course-name {
+      color: var(--white);
+      font-size: 22px;
+      font-weight: var(--medium);
+    }
+
+    .course-section-container .course-holder .course .desc {
+      color: gray;
+      font-size: 12px;
+      font-weight: var(--regular);
+    }
+
+    .course-section-container .course-holder .course .btn {
+      width: 100%;
+      display: inline-block;
+      text-align: center;
+      background-color: var(--orange);
+      padding: 8px 16px;
+      border-radius: 10px;
+      font-weight: var(--medium);
+      color: var(--white);
+      margin-top: 16px;
+    }
+
+    /*******************************/
+    /* Marquee Section */
+    /*******************************/
+
+    #marquee-section {
+      max-width: 100vw;
+    }
+
+    #marquee-section .marquee-section-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      padding: 50px 0;
+      gap: 32px;
+      margin: 0 auto;
+      overflow: hidden;
+      background: linear-gradient(270deg, #fff0 70%, #fff), linear-gradient(270deg, #fff, #fff0 30%);
+      inset: 0%;
+    }
+
+    @keyframes marquee1 {
+      0% {
+        transform: translateX(0);
+      }
+
+      100% {
+        transform: translateX(-107%);
+      }
+    }
+
+    @keyframes marquee2 {
+      0% {
+        transform: translateX(-107%);
+      }
+
+      100% {
+        transform: translateX(0)
+      }
+    }
+
+    #marquee-section .marquee-section-container .marquee-holder {
+      display: flex;
+      gap: 16px;
+      animation: marquee1 50s linear infinite;
+
+    }
+
+    #marquee-section .marquee-section-container .marquee-holder.second {
+      transform: translateX(-107%);
+      animation: marquee2 50s linear infinite;
+    }
+
+    #marquee-section .marquee-section-container .image-holder {
+      min-width: 300px;
+      display: flex;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    #marquee-section .marquee-section-container .youtube-link {
+      text-align: center;
+      font-weight: var(--medium);
+      display: flex;
+      justify-content: center;
+    }
+
+    #marquee-section .marquee-section-container .youtube-link a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      font-size: 18px;
+      background-color: var(--light-blue);
+      color: var(--white);
+      width: fit-content;
+      padding: 8px 16px;
+      border-radius: 10px;
+    }
+
+    #marquee-section .marquee-section-container .youtube-link i {
+      color: red;
+      font-size: 30px;
+    }
+
+    /*******************************/
+    /* Testimonials-Section */
+    /*******************************/
+
+    #testimonials {
+      background: var(--dark-blue);
+      padding: 100px 64px;
+
+      .splide__arrows {
+
+        .splide__arrow--prev {
+          left: -4em;
+        }
+
+        .splide__arrow--next {
+          right: -4em;
+        }
+      }
+
+      .splide__slide {
+        filter: blur(4px);
+        /* scale: 0.9; */
+        transition: scale 0.3s ease, fliter 0.3s linear;
+      }
+
+      .is-active {
+        scale: 1;
+        filter: blur(0px);
+      }
+
+
+
+      .splide__pagination {
+        bottom: -3.5em;
+      }
+    }
+
+    #testimonials .testimonial-section-container {
+      margin: 0 auto;
+      max-width: 1200px;
+    }
+
+    #testimonials .testimonials-card-container {
+      padding: 10px 0;
+    }
+
+    #testimonials .testimonials-card-container .testimonial-card {
+      border: 2px solid var(--light-blue);
+      border-radius: 15px;
+      padding: 24px;
+      background: #060945;
+      color: var(--white);
+      height: 100%;
+      /* margin: 8px; */
+    }
+
+    #testimonials .testimonials-card-container .testimonial-card i {
+      font-size: 32px;
+      color: var(--orange);
+    }
+
+    #testimonials .testimonials-card-container .testimonial-card .client-name {
+      font-weight: 200;
+      font-style: italic;
+      margin-top: 12px;
+      text-align: right;
+    }
+
+    /*******************************/
+    /* About-Section */
+    /*******************************/
+
+    #about-us {
+      max-width: 100vw;
+      background-color: var(--dark-blue);
+      padding: 100px 64px;
+    }
+
+    #about-us .about-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 350px 1fr;
+      gap: 48px;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    #about-us .about-container .left {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 32px;
+    }
+
+    #about-us .about-container .left .about-left-data .number-data {
+      color: var(--orange);
+      font-size: 32px;
+      font-weight: 1000;
+    }
+
+    #about-us .about-container .left .about-left-data p {
+      color: var(--white);
+      font-size: 24px;
+    }
+
+    #about-us .about-container .right {
+      border-radius: 32px;
+      background: url(https://ecourses.worldonvastu.com/wp-content/uploads/2024/09/img1.png) no-repeat center;
+      background-size: cover;
+      color: var(--white);
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+    }
+
+    #about-us .about-container .right .details-section {
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+      padding: 32px 0 32px 32px;
+    }
+
+    #about-us .about-container .right .details-section h2 {
+      font-size: 44px;
+
+      span {
+        color: var(--orange);
+      }
+    }
+
+    #about-us .about-container .right .details-section .details {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      font-weight: var(--regular);
+      font-size: 14px;
+    }
+
+    #about-us .about-container .right .image-holder {
+      height: 400px;
+      width: 385px;
+      flex-shrink: 0;
+      align-self: end;
+    }
+
+    #about-us .about-container .right i {
+      font-size: 24px;
+    }
+
+    #about-us .about-container .right .right-arrow {
+      position: absolute;
+      height: 60px;
+      width: 60px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      background-color: #132055;
+      top: 50%;
+      transform: translate(-50%, -50%);
+
+      i {
+        font-size: 36px;
+      }
+    }
+
+    /*******************************/
+    /* UPCOMMING EVENT-SECTION */
+    /*******************************/
+
+
+    #upcommingEvents {
+      max-width: 100vw;
+      background: var(--dark-blue) url(https://ecourses.worldonvastu.com/wp-content/uploads/2024/09/line-bg.png) no-repeat center;
+      background-size: cover;
+      padding: 0 64px;
+    }
+
+    #upcommingEvents .upcommingEvents-section-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 50px 0;
+    }
+
+    .upcommingEvents-section-container .header {
+      color: var(--white);
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-self: center;
+    }
+
+    .upcommingEvents-section-container .header p {
+      font-size: 20px;
+      font-weight: var(--medium);
+    }
+
+    .upcommingEvents-section-container .header .section-heading {
+      z-index: 1;
+      position: relative;
+    }
+
+    .upcommingEvents-section-container .header .strike {
+      display: block;
+      position: absolute;
+      width: 400px;
+      left: 50%;
+      bottom: -25px;
+      transform: translate(-50%, 0);
+      fill: var(--orange);
+      z-index: -1;
+    }
+
+    .upcommingEvents-section-container .upcomming-events {
+      margin-top: 64px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      /* grid-template-columns: auto 1fr; */
+      gap: 64px;
+      position: relative;
+    }
+
+    .upcommingEvents-section-container .upcomming-events .events {
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+    }
+
+    .upcommingEvents-section-container .upcomming-events .events .event {
+      color: var(--white);
+      display: flex;
+      justify-content: flex-start;
+      gap: 16px;
+    }
+
+    .upcommingEvents-section-container .upcomming-events .events .divider {
+      height: 1px;
+      width: 100%;
+      background-color: var(--orange);
+    }
+
+    .upcommingEvents-section-container .upcomming-events .events .event .line {
+      width: 2px;
+      min-height: 100%;
+      background-color: #fff;
+      border-radius: 5px;
+    }
+
+    .upcommingEvents-section-container .upcomming-events .events .event .events-details-holder .event-name {
+      font-size: 20px;
+      font-weight: var(--semibold);
+      margin-bottom: 8px;
+    }
+
+    .upcommingEvents-section-container .upcomming-events .events .event .events-details-holder .event-details {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+
+      .line {
+        align-self: stretch;
+        width: 1px !important;
+      }
+    }
+
+    .upcommingEvents-section-container .upcomming-events .events .event .events-details-holder .join-btn {
+      padding: 4px 16px;
+      border-radius: 5px;
+      background-color: var(--orange);
+      display: inline-block;
+      margin-top: 8px;
+      font-size: 12px;
+      font-weight: var(--semibold);
+    }
+
+    .upcommingEvents-section-container .upcomming-events .image-holder {
+      border-radius: 5px;
+      overflow: hidden;
+      height: 400px;
+    }
+
+    .upcommingEvents-section-container .upcomming-events .image-holder img {
+      object-fit: cover;
+    }
+
+
+    /*******************************/
+    /* TAGS-SECTION */
+    /*******************************/
+
+    #tags-section {
+      max-width: 100vw;
+      padding: 0 64px;
+      background: var(--dark-blue) url(https://ecourses.worldonvastu.com/wp-content/uploads/2024/09/Tag-bg-2.png) no-repeat center;
+      background-size: cover;
+      overflow-x: hidden;
+    }
+
+    #tags-section .tags-section-container {
+      min-height: inherit;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 100px 0;
+    }
+
+    #tags-section .tags-section-container .tags-container {
+      min-height: 100%;
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
+      align-items: center;
+      gap: 16px;
+    }
+
+    #tags-section .tags-section-container .tags-container .tags {
+      color: var(--white);
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+
+      .tag {
+        background-color: #08143e;
+
+        font-size: 14px;
+        padding: 16px;
+        border-radius: 10px;
+        position: relative;
+        border: 1px solid #122056;
+        position: relative;
+        width: fit-content;
+
+        & i {
+          position: absolute;
+          width: fit-content;
+          background-color: #6b8ff0;
+          padding: 8px;
+          border-radius: 10px;
+        }
+      }
+
+      .tag:nth-child(3n) {
+        background-color: #132055;
+        border: 2px solid #667abf;
+
+        & i {
+          background-color: var(--orange);
+        }
+      }
+
+      .tag.highlighted {
+        background-color: #132055;
+        border: 2px solid #667abf;
+
+        & i {
+          background-color: var(--orange);
+        }
+      }
+    }
+
+    #tags-section .tags-section-container .tags-container .tags.left {
+      .tag {
+        & i {
+          right: 0;
+          top: 0;
+          transform: translate(50%, -50%);
+        }
+
+        &:nth-child(odd) {
+          align-self: end;
+        }
+      }
+    }
+
+
+    #tags-section .tags-section-container .tags-container .tags.right {
+      .tag {
+        & i {
+          left: 0;
+          top: 0;
+          transform: translate(-50%, -50%);
+        }
+
+        &:nth-child(even) {
+          align-self: end;
+        }
+      }
+    }
+
+    #tags-section .tags-section-container .tags-container .img-holder {
+      width: 250px;
+      position: relative;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      & img {
+        width: 200px;
+      }
+
+      .name {
+        position: absolute;
+        font-size: 30px;
+        font-weight: var(--bold);
+        text-align: center;
+        bottom: 0;
+        transform: translateY(100%);
+        color: var(--white);
+
+        span {
+          color: var(--orange);
+        }
+      }
+    }
+
+    /*******************************/
+    /* ---- COMMUNITY MEMBERS ---- */
+    /*******************************/
+
+    #community-members-section {
+      max-width: 100vw;
+      background-color: var(--dark-blue);
+      padding: 100px 64px;
+    }
+
+    #community-members-section .community-members-section-conatiner {
+      max-width: 1200px;
+      margin: 0 auto;
+      position: relative;
+      height: 100%;
+      transform-style: preserve-3d;
+      border-radius: 20px;
+    }
+
+    #community-members-section .community-members-section-conatiner::after {
+      content: '';
+      position: absolute;
+      left: -2px;
+      right: -2px;
+      top: -2px;
+      bottom: -2px;
+      background: linear-gradient(71deg, #0d1212, var(--orange), #0d1212);
+      border-radius: inherit;
+      transform: translateZ(-1px) !important;
+    }
+
+    #community-members-section .community-members-section-conatiner img {
+      object-fit: cover;
+      border-radius: inherit;
+    }
+
+    #community-members-section .community-members-section-conatiner h2 {
+      position: absolute;
+      font-size: 52px;
+      color: var(--white);
+      text-align: center;
+      left: 0;
+      right: 0;
+      bottom: 32px;
+      z-index: 5;
+    }
+
+    #community-members-section h2 span {
+      color: var(--orange);
+    }
+
+    #community-members-section .community-members-section-conatiner .black-tint {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      border-radius: inherit;
+      background: linear-gradient(to top, rgba(0, 0, 0, 0.717), rgba(0 0 0/0));
+    }
+
+    /*******************************/
+    /* ---- FORM SECTION ---- */
+    /*******************************/
+
+    #contact {
+      max-width: 100vw;
+      background-color: var(--white);
+      padding: 100px 64px;
+    }
+
+    #contact .Form-section-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 50px;
+      border-radius: 10px;
+      border: 1px solid var(--grey-line);
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+
+    #contact .Form-section-container .form-holder {
+      /* display: grid;
+    grid-template-columns: 1fr 1fr; */
+      display: flex;
+      flex-wrap: wrap;
+      column-gap: 32px;
+      row-gap: 16px;
+      margin-top: 16px;
+    }
+
+    #contact .Form-section-container .form-holder .left,
+    #contact .Form-section-container .form-holder .right {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      flex: 1 1 250px;
+    }
+
+    #contact .Form-section-container .form-holder .input-holder {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      flex-grow: 1;
+    }
+
+    #contact .Form-section-container .form-holder .input-holder small {
+      font-weight: var(--medium);
+      color: var(--grey-text);
+    }
+
+    #contact .Form-section-container .form-holder input,
+    #contact .Form-section-container .form-holder textarea {
+      border: 1px solid var(--grey-line);
+      padding: 8px;
+      border-radius: 5px;
+      font-size: 16px;
+      font-weight: var(--medium);
+      outline: none;
+
+    }
+
+    #contact .Form-section-container .form-holder textarea {
+      flex-grow: 1;
+      resize: none;
+      height: 100%;
+    }
+
+    #contact .Form-section-container .form-holder input[type='submit'] {
+      background-color: var(--orange);
+      color: var(--white);
+      font-weight: var(--medium);
+      border: none;
+      cursor: pointer;
+    }
+
+    /*******************************/
+    /* ---- FAQ SECTION ---- */
+    /*******************************/
+
+    #FAQs {
+      padding: 0 64px;
+      background-color: var(--white);
+    }
+
+    #FAQs .faq-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 0 100px 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    #FAQs .faq-container .section-heading {
+      font-weight: var(--bold);
+      color: var(--black);
+    }
+
+    #FAQs .faq-container .FAQ-holder {
+      display: grid;
+      align-items: start;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+    }
+
+    #FAQs .faq-container .FAQ-holder .faq {
+      outline: 1px solid rgba(255, 255, 255, 0.5);
+      padding: 24px;
+      padding: 16px;
+      border-radius: 16px;
+      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+
+    #FAQs .faq-container .FAQ-holder .faq .question {
+      font-size: 18px;
+      font-weight: var(--medium);
+      align-items: center;
+      justify-content: space-between;
+      display: flex;
+      cursor: pointer;
+      margin-bottom: 8px;
+      gap: 16px;
+    }
+
+    #FAQs .faq-container .FAQ-holder .faq i {
+      font-size: 32px;
+      color: var(--orange);
+      transition: rotate 0.2s linear;
+    }
+
+    #FAQs .faq-container .FAQ-holder .faq .answer {
+      height: 0px;
+      overflow: hidden;
+      transition: height 0.2s linear;
+    }
+
+    #FAQs .faq-container .FAQ-holder .faq .answer .imp {
+      color: var(--orange);
+      text-decoration: underline;
+    }
+
+
+    /*******************************/
+    /* ---- FOOTER SECTION ---- */
+    /*******************************/
+
+    footer {
+      max-width: 100vw;
+      padding: 50px 64px;
+      background: url(https://ecourses.worldonvastu.com/wp-content/uploads/2024/09/img1.png) no-repeat center;
+      background-size: cover;
+    }
+
+    footer .footer-section-container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    footer .footer-section-container .footer-top {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      justify-content: space-between;
+      gap: 48px;
+    }
+
+    footer .footer-section-container .left-section {
+      display: flex;
+      gap: 32px;
+    }
+
+    footer .footer-section-container .left-section .brand-info {
+      color: var(--white);
+    }
+
+    footer .footer-section-container .left-section .brand-info h3 {
+      font-size: 30px;
+      margin-bottom: 16px;
+    }
+
+    footer .footer-section-container .left-section .brand-info p {
+      font-size: 16px;
+      text-align: justify;
+      line-height: 20px;
+    }
+
+    footer .footer-section-container .right-section {
+      display: flex;
+      color: var(--white);
+      gap: 48px;
+      justify-content: space-around;
+    }
+
+    footer .footer-section-container .right-section .links-holder .header {
+      font-size: 24px;
+      font-weight: var(--medium);
+      font-weight: var(--semibold);
+      margin-bottom: 16px;
+      white-space: nowrap;
+    }
+
+
+    footer .footer-section-container .right-section .links-holder .links {
+      display: flex;
+      flex-direction: column;
+      font-size: 16px;
+      gap: 8px;
+      font-weight: var(--regular);
+    }
+
+    footer .footer-section-container .right-section .links-holder .social-links {
+      margin-top: 8px;
+      display: flex;
+      gap: 16px;
+    }
+
+    footer .footer-section-container .right-section .links-holder .social-links a {
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
+      flex-shrink: 0;
+      background-color: var(--white);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    footer .footer-section-container .right-section .links-holder .social-links i {
+      color: var(--orange);
+      font-size: 24px;
+    }
+
+    footer .footer-section-container .line {
+      width: 100%;
+      height: 0.1px;
+      background-color: var(--light-blue);
+      background-color: var(--orange);
+      margin: 32px 0;
+    }
+
+    footer .footer-section-container .copy-right {
+      text-align: center;
+      font-size: 12px;
+      color: var(--white);
+    }
+
+    /*******************************/
+    /* -- ADVERTISEMENT SECTION -- */
+    /*******************************/
+
+    #advertisement-section {
+      position: sticky;
+      top: 0;
+      width: 100%;
+      z-index: 999;
+      background: url(https://ecourses.worldonvastu.com/wp-content/uploads/2024/09/img1.png) no-repeat center;
+      background-size: cover;
+      padding: 8px 64px;
+      /* overflow-x: hidden; */
+      /* display: none; */
+    }
+
+    #advertisement-section .close-btn {
+      position: absolute;
+      color: var(--white);
+      z-index: 1000;
+      right: 30px;
+      top: 50%;
+      transform: translateY(-50%);
+      margin-left: 16px;
+    }
+
+    #advertisement-section .advertisement-section-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 32px;
+    }
+
+    #advertisement-section .advertisement-section-container .image-holder {
+      width: 120px;
+    }
+
+    #advertisement-section .advertisement-section-container .text {
+      color: white;
+      font-size: 18px;
+      text-align: center;
+    }
+
+    #advertisement-section .advertisement-section-container .button {
+      padding: 8px 16px;
+      border-radius: 5px;
+      color: var(--white);
+      background-color: var(--orange);
+      font-size: 16px;
+      font-weight: var(--medium);
+      cursor: pointer;
+      flex-shrink: 0;
+    }
+
+    /* ***********************************/
+    /* --------  PopUp Section -------- */
+    /* ***********************************/
+
+    .overlay {
+      position: fixed;
+      background: rgba(255, 255, 255, 0.25);
+      backdrop-filter: blur(4px);
+      -webkit-backdrop-filter: blur(4px);
+      height: 100vh;
+      width: 100vw;
+      top: 0;
+      left: 0;
+      z-index: 999;
+
+      display: none;
+      place-items: center;
+
+
+      .popup {
+        width: 550px;
+        height: 450px;
+        background: radial-gradient(circle, rgba(245, 175, 25, 1) 0%, rgba(241, 39, 17, 1) 98%);
+        /* background: radial-gradient(circle, rgba(250, 81, 58, 1) 0%, rgba(3, 5, 42, 1) 42%); */
+        border-radius: 20px;
+        padding: 16px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 32px;
+        position: relative;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+        .close-btn {
+          color: var(--white);
+          font-weight: var(--semibold);
+          position: absolute;
+          right: 20px;
+          top: 20px;
+          cursor: pointer;
+        }
+
+        .img-holder {
+          display: flex;
+          justify-content: center;
+
+          img {
+            width: 250px;
+          }
+        }
+
+        .count-down {
+          display: flex;
+          gap: 16px;
+
+          .number {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 70px;
+            padding: 8px;
+            background-color: var(--white);
+            border-radius: 10px;
+
+            p {
+              font-size: 20px;
+              font-weight: var(--medium);
+            }
+
+            small {
+              font-size: 10px;
+            }
+          }
+        }
+
+        .enroll-btn {
+          background-color: var(--white);
+          color: var(--orange);
+          font-weight: var(--medium);
+          padding: 8px;
+          width: 60%;
+          border-radius: 10px;
+          text-align: center;
+        }
+
+        .note {
+          text-align: center;
+          color: var(--white);
+          font-weight: var(--medium);
+
+          &::before {
+            content: "➡️";
+            padding-right: 8px;
+          }
+        }
+      }
+
+    }
+  </style>
+
+
+  <!-- <link rel="stylesheet" href="./Assets/CSS/queries.css" /> -->
+  <style type="text/css">
+    /*******************************/
+    /* ---------- NavBar ---------- */
+    /*******************************/
+
+    @media (max-width: 1150px) {
+      header .header-container .nav-items .nav-links {
+        gap: 12px;
+      }
+    }
+
+    @media (max-width: 1000px) {
+      header .header-container {
+        padding: 0 32px;
+      }
+    }
+
+    @media (max-width: 950px) {
+
+      header .header-container .nav-items {
+        padding: 8px 16px;
+      }
+
+      header .header-container .nav-items .nav-links {
+        display: none;
+      }
+
+      header .header-container .nav-items .enroll-btn {
+        display: none;
+      }
+
+      header .header-container .hamburger {
+        display: block;
+        padding: 8px;
+        display: flex;
+      }
+
+      .hamburger .hamburger-box {
+        width: 30px;
+      }
+
+      .hamburger-inner,
+      .hamburger-inner::before,
+      .hamburger-inner::after,
+      .hamburger.is-active .hamburger-inner,
+      .hamburger.is-active .hamburger-inner::before,
+      .hamburger.is-active .hamburger-inner::after {
+        background-color: var(--white);
+        width: 30px;
+        height: 3px;
+      }
+
+      .header-container .mobile-nav-items {
+        display: block !important;
+        background: url(https://ecourses.worldonvastu.com/wp-content/uploads/2024/09/img1.png) no-repeat center;
+        background-size: cover;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        border-radius: 20px;
+        padding: 16px 0;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 75px;
+        z-index: 99;
+        opacity: 0;
+        pointer-events: none;
+        transition:
+          transform 0.5s ease,
+          opacity 0.5s ease;
+        pointer-events: all;
+      }
+
+      .header-container .mobile-nav-items.active {
+        opacity: 1;
+      }
+
+      .header-container .mobile-nav-items .nav-links-mobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .header-container .mobile-nav-items .nav-links-mobile a {
+        opacity: 1;
+      }
+
+      .header-container .mobile-nav-items .nav-links-mobile .enroll-btn-mobile {
+        padding: 8px 16px;
+        border-radius: 20px;
+        font-weight: var(--medium);
+        background-color: var(--orange);
+        color: var(--white);
+      }
+    }
+
+    @media (max-width: 425px) {
+      header .header-container {
+        padding: 0 16px;
+      }
+    }
+
+    /*******************************/
+    /* ------- Hero-Section ------- */
+    /*******************************/
+
+    @media (max-width: 1300px) {
+      #hero-section .content .highlighted {
+        font-size: 30px;
+      }
+
+      #hero-section .content h1 .animated-text-holder .animated-text {
+        font-size: 36px;
+      }
+    }
+
+    @media (max-width: 1000px) {
+      #hero-section {
+        padding: 0 32px;
+      }
+    }
+
+    @media (max-width: 1200px) {
+      #hero-section .image-holder img {
+        width: 375px;
+      }
+    }
+
+    @media (max-width: 1050px) {
+      #hero-section {
+        background: url(https://ecourses.worldonvastu.com/wp-content/uploads/2024/09/HeroSection-rotate.png) no-repeat center;
+        background-size: cover;
+      }
+
+      #hero-section .container {
+        grid-template-columns: 1fr;
+        padding-top: 8rem;
+      }
+
+      #hero-section .content {
+        align-items: center;
+      }
+
+      #hero-section .content .highlighted {
+        text-align: center;
+      }
+
+      #hero-section .content h1 {
+        width: 100%;
+        text-align: center;
+      }
+
+      #hero-section .content h1 .animated-text-holder {
+        align-items: center;
+      }
+
+      #hero-section .content h1 .animated-text-holder .animated-text {
+        font-size: 52px;
+      }
+
+      #hero-section .content .note {
+        text-align: center;
+      }
+
+      #hero-section .image-holder {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 32px;
+      }
+
+      #hero-section .image-holder img {
+        width: 70%;
+      }
+
+      #hero-section .image-holder .arrow img {
+        right: 50%;
+        transform: scaleX(-1) translateY(-50%) translateX(-130%);
+      }
+
+      #hero-section .image-holder .arrow .arrow-text {
+        right: 50%;
+        transform: translateX(320%);
+      }
+    }
+
+    @media (max-width: 830px) {
+      #hero-section .content h1 {
+        font-size: 36px;
+      }
+
+      #hero-section .content h1 .animated-text-holder .animated-text {
+        font-size: 44px;
+      }
+    }
+
+    @media (max-width: 750px) {
+      #hero-section .image-holder .arrow img {
+        width: 150px;
+        transform: scaleX(-1) translateY(-47%) translateX(-140%);
+      }
+
+      #hero-section .image-holder .arrow .arrow-text {
+        transform: translateX(260%);
+      }
+    }
+
+    @media (max-width: 700px) {
+      #hero-section .content h1 {
+        font-size: 30px;
+      }
+
+      #hero-section .content h1 .animated-text-holder {
+        height: 47px;
+      }
+
+      #hero-section .content h1 .animated-text-holder .animated-text {
+        font-size: 36px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      #hero-section .content .highlighted {
+        font-size: 24px;
+      }
+
+      #hero-section .content h1 {
+        font-size: 24px;
+      }
+
+      #hero-section .content h1 .animated-text-holder {
+        height: 40px;
+      }
+
+      #hero-section .content h1 .animated-text-holder .animated-text {
+        font-size: 30px;
+      }
+
+      #hero-section .image-holder img {
+        width: 100%;
+      }
+
+      #hero-section .image-holder .arrow img {
+        width: 120px;
+        transform: scaleX(-1) translateY(-45%) translateX(-150%);
+      }
+
+      #hero-section .image-holder .arrow .arrow-text {
+        transform: translateX(230%);
+      }
+    }
+
+    @media (max-width: 520px) {
+      #hero-section .content .highlighted {
+        font-size: 20px;
+      }
+
+      #hero-section .content h1 {
+        font-size: 20px;
+      }
+
+      #hero-section .content h1 .animated-text-holder {
+        height: 31px;
+      }
+
+      #hero-section .content h1 .animated-text-holder .animated-text {
+        font-size: 24px;
+      }
+
+      #hero-section .content .action-btn {
+        padding: 8px 32px;
+        font-size: 16px;
+        width: 100%;
+      }
+
+      #hero-section .image-holder .arrow .arrow-text {
+        transform: translateX(260%);
+        font-size: 12px;
+        top: 35%;
+      }
+    }
+
+    @media (max-width: 440px) {
+      #hero-section {
+        padding: 0 16px;
+      }
+
+      #hero-section .content .highlighted {
+        font-size: 20px;
+      }
+
+      #hero-section .content h1 {
+        font-size: 20px;
+      }
+
+      #hero-section .content h1 .animated-text-holder .animated-text {
+        font-size: 22px;
+      }
+    }
+
+    /*******************************/
+    /* ------ Video-Section ------ */
+    /*******************************/
+
+    @media (max-width: 1200px) {
+      #video-section .video-section-container .video-holder {
+        width: 80vw;
+        height: 40vw;
+      }
+    }
+
+    @media (max-width: 1000px) {
+      #video-section .video-section-container {
+        padding: 6rem 32px;
+      }
+
+      #video-section .video-section-container .video-holder {
+        width: 90%;
+        height: 40vw;
+      }
+    }
+
+    @media (max-width: 800px) {
+      #video-section .video-section-container .video-holder {
+        width: 100%;
+        height: 50vw;
+      }
+    }
+
+    @media (max-width: 500px) {
+      #video-section .video-section-container {
+        padding: 4rem 32px;
+      }
+    }
+
+    @media (max-width: 440px) {
+      #video-section .video-section-container {
+        padding: 4rem 16px;
+      }
+    }
+
+    /*******************************/
+    /* ------- Slider-Section ------- */
+    /*******************************/
+
+    @media (max-width: 1000px) {
+      #slider-section {
+        padding: 16px 36px;
+        gap: 24px;
+      }
+
+      #slider-section .slider-section-container {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 64px;
+      }
+
+    }
+
+
+    @media (max-width: 440px) {
+      #slider-section {
+        padding: 16px 16px;
+      }
+
+      .slider-section-container .content-holder h2 {
+        font-size: 22px;
+      }
+
+      .slider-section-container .content-data p {
+        font-size: 16px;
+      }
+    }
+
+    /*******************************/
+    /* ------ Course-Section ------ */
+    /*******************************/
+
+    @media (max-width: 1000px) {
+      #course {
+        padding: 0 32px;
+      }
+
+      .course-section-container .course-holder .course .course-name {
+        font-size: 18px;
+      }
+    }
+
+    @media (max-width: 800px) {
+      .course-section-container .course-holder .course .course-name {
+        font-size: 16px;
+      }
+    }
+
+    @media (max-width: 700px) {
+      .course-section-container .course-holder {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 500px) {
+      .course-section-container .course-holder {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 440px) {
+      #course {
+        padding: 0 16px;
+      }
+    }
+
+    /*******************************/
+    /* -- Testimonial-SECTION -- */
+    /*******************************/
+
+    @media (max-width: 1300px) {
+      #testimonials {
+        padding: 100px 32px;
+
+        .splide__arrows {
+          .splide__arrow--prev {
+            left: 0;
+          }
+
+          .splide__arrow--next {
+            right: 0;
+          }
+        }
+      }
+
+      #testimonials .testimonial-section-container {
+        max-width: 1000px;
+      }
+    }
+
+    @media (max-width: 440px) {
+      #testimonials {
+        padding: 100px 16px;
+      }
+    }
+
+    /*******************************/
+    /* ------ AboutUs-Section ------ */
+    /*******************************/
+    @media (max-width: 1250px) {
+      #about-us .about-container {
+        grid-template-columns: 1fr;
+      }
+
+      #about-us .about-container .left {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+      }
+
+      #about-us .about-container .left div {
+        text-align: center;
+      }
+
+      #about-us .about-container .right .details-section {
+        padding: 32px;
+      }
+
+      #about-us .about-container .right .image-holder {
+        align-self: center;
+      }
+
+      #about-us .about-container .right .right-arrow {
+        top: 0%;
+        left: 50%;
+
+        i {
+          rotate: 90deg;
+        }
+      }
+    }
+
+    @media (max-width: 1000px) {
+      #about-us {
+        padding: 100px 32px;
+      }
+
+      #about-us .about-container .right {
+        flex-direction: column;
+      }
+    }
+
+    @media (max-width: 500px) {
+      #about-us .about-container .right .details-section h2 {
+        font-size: 32px;
+      }
+
+      .splide__slide {
+        filter: blur(0px) !important;
+      }
+
+      #about-us .about-container .left .about-left-data .number-data {
+        font-size: 22px;
+      }
+
+      #about-us .about-container .left .about-left-data p {
+        font-size: 20px;
+      }
+    }
+
+    @media (max-width: 440px) {
+      #about-us {
+        padding: 50px 16px;
+      }
+
+      #about-us .about-container .right .details-section {
+        padding: 24px 16px;
+      }
+
+      #about-us .about-container .right .image-holder {
+        height: 350px;
+        width: 100%;
+      }
+    }
+
+    /*******************************/
+    /* -- UPCOMMING EVENT-SECTION -- */
+    /*******************************/
+
+    @media (max-width: 1150px) {
+      .upcommingEvents-section-container .upcomming-events {
+        grid-template-columns: 1fr;
+      }
+
+      .upcommingEvents-section-container .upcomming-events .image-holder {
+        height: auto;
+      }
+
+      .upcommingEvents-section-container .upcomming-events .image-holder img {
+        height: auto;
+      }
+    }
+
+    @media (max-width: 1100px) {
+      #upcommingEvents {
+        padding: 0 32px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .upcommingEvents-section-container .header .strike {
+        width: 330px;
+      }
+    }
+
+    @media (max-width: 440px) {
+      #upcommingEvents {
+        padding: 0 16px;
+      }
+
+      .upcommingEvents-section-container .header .strike {
+        width: 275px;
+      }
+    }
+
+    /*******************************/
+    /* ------- TAGS-SECTION ------- */
+    /*******************************/
+
+    @media (max-width: 1000px) {
+      #tags-section {
+        padding: 0 32px;
+      }
+    }
+
+    @media (max-width: 900px) {
+      #tags-section .tags-section-container .tags-container .img-holder {
+        width: 150px;
+      }
+
+      #tags-section .tags-section-container .tags-container .img-holder img {
+        width: 150px;
+      }
+
+      #tags-section .tags-section-container .tags-container .img-holder .name {
+        font-size: 20px;
+      }
+    }
+
+    @media (max-width: 700px) {
+      #tags-section .tags-section-container {
+        padding: 50px 0;
+      }
+
+      #tags-section .tags-section-container .tags-container .tags .tag {
+        font-size: 12px;
+        padding: 12px;
+        width: fit-content;
+      }
+    }
+
+    @media (max-width: 440px) {
+      #tags-section {
+        padding: 0 16px;
+      }
+
+      #tags-section .tags-section-container .tags-container .img-holder {
+        width: 75px;
+      }
+
+      #tags-section .tags-section-container .tags-container .img-holder img {
+        width: 75px;
+      }
+
+      #tags-section .tags-section-container .tags-container .img-holder .name {
+        font-size: 12px;
+      }
+    }
+
+    /*******************************/
+    /* ---- COMMUNITY MEMBERS ---- */
+    /*******************************/
+
+    @media (max-width: 1000px) {
+      #community-members-section {
+        padding: 32px;
+      }
+
+      #community-members-section .community-members-section-conatiner h2 {
+        font-size: 44px;
+      }
+    }
+
+    @media (max-width: 850px) {
+      #community-members-section .community-members-section-conatiner h2 {
+        font-size: 30px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      #community-members-section .community-members-section-conatiner h2 {
+        font-size: 20px;
+      }
+    }
+
+    @media (max-width: 440px) {
+      #community-members-section {
+        padding: 32px 16px;
+      }
+
+      #community-members-section .community-members-section-conatiner h2 {
+        font-size: 16px;
+      }
+    }
+
+    /*******************************/
+    /* ---- FORM SECTION ---- */
+    /*******************************/
+
+    @media (max-width: 1000px) {
+      #contact {
+        padding: 100px 32px;
+      }
+    }
+
+    @media (max-width: 800px) {
+      #contact .Form-section-container .section-heading {
+        font-size: 44px;
+      }
+    }
+
+    @media (max-width: 650px) {
+      #contact .Form-section-container .section-heading {
+        font-size: 36px;
+      }
+    }
+
+    @media (max-width: 560px) {
+      #contact .Form-section-container .section-heading {
+        font-size: 30px;
+      }
+    }
+
+    @media (max-width: 440px) {
+      #contact .Form-section-container {
+        padding: 32px;
+      }
+
+      #contact {
+        padding: 50px 16px;
+      }
+    }
+
+    /*******************************/
+    /* -- FAQs-SECTION -- */
+    /*******************************/
+
+    @media (max-width: 1000px) {
+      #FAQs {
+        padding: 0 32px;
+      }
+    }
+
+    @media (max-width: 650px) {
+      #FAQs {
+        padding: 0 16px;
+      }
+
+      #FAQs .faq-container .FAQ-holder {
+        grid-template-columns: repeat(1, 1fr);
+      }
+
+      #FAQs .faq-container .FAQ-holder .faq i {
+        font-size: 24px;
+      }
+    }
+
+    /*******************************/
+    /* ---- FOOTER SECTION ---- */
+    /*******************************/
+
+    @media (max-width: 1000px) {
+      footer {
+        padding: 50px 32px;
+      }
+    }
+
+    @media (max-width: 800px) {
+      footer .footer-section-container .footer-top {
+        grid-template-columns: 1fr;
+      }
+
+      footer .footer-section-container .right-section {
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 32px;
+      }
+    }
+
+    @media (max-width: 440px) {
+      footer {
+        padding: 50px 16px;
+      }
+    }
+
+    /*******************************/
+    /* -- ADVERTISEMENT SECTION -- */
+    /*******************************/
+
+    @media (max-width: 800px) {
+      #advertisement-section {
+        padding: 16px 32px;
+      }
+
+      #advertisement-section .close-btn {
+        right: 20px;
+        top: 20px;
+        transform: translateY(0);
+        margin-left: 16px;
+      }
+
+      #advertisement-section .advertisement-section-container {
+        flex-direction: column;
+        gap: 16px;
+      }
+
+      #advertisement-section .advertisement-section-container .text {
+        font-size: 16px;
+      }
+    }
+
+    @media (max-width: 800px) {
+      #advertisement-section {
+        padding: 16px;
+      }
+    }
+
+    /*******************************/
+    /* ---- OVERLAY SECTION ---- */
+    /*******************************/
+
+    @media (max-width: 600px) {
+      .overlay {
+        .popup {
+          width: 450px;
+          height: 350px;
+          gap: 16px;
+
+          .img-holder {
+            img {
+              width: 200px;
+            }
+          }
+
+          .enroll-btn {
+            width: 80%;
+          }
+
+          .note {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+
+    @media (max-width: 500px) {
+      .overlay {
+        .popup {
+          width: 350px;
+          height: 350px;
+          gap: 16px;
+
+          .img-holder {
+            img {
+              width: 150px;
+            }
+          }
+
+          .count-down {
+            .number {
+              width: 60px;
+
+              p {
+                font-size: 20px;
+                font-weight: var(--medium);
+              }
+
+              small {
+                font-size: 10px;
+              }
+            }
+          }
+
+          .enroll-btn {
+            width: 90%;
+          }
+
+          .note {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  </style>
+
+</head>
+
+
+<body>
+  <div id="Main">
+
+    <!-- Header Advertisement Start -->
+    <section id="advertisement-section">
+      <div class="advertisement-section-container">
+        <!-- <div class="content-holder"> -->
+        <i class="ri-close-large-line close-btn"></i>
+        <div class="image-holder">
+          <img src="https://ecourses.worldonvastu.com/wp-content/uploads/2024/09/limited-time.svg" alt="">
+        </div>
+
+        <div class="text">
+          <p>👉 <b>Don't Miss Out -</b> Get Extra 5% Discount on ACMOS Lecher Antenna Offline Training in Mumbai!</p>
+        </div>
+
+        <a href="https://pareshgoshar.worldonvastu.com/offline/" target="_blank" class="button">View Offer</a>
+        <!-- </div> -->
+      </div>
+    </section>
+    <!-- Header Advertisement End -->
+
+
+    <div class="wrapper">
+
+      <!-- Header Section Start -->
+      <header>
+        <div class="header-container">
+
+          <div class="nav-items">
+            <div class="logo">
+              <img src="https://ecourses.worldonvastu.com/wp-content/uploads/2024/09/Logo.png" alt="Logo" />
+            </div>
+            <nav class="nav-links">
+              <a href="#course">All Course</a>
+              <a href="#testimonials">Testimonials</a>
+              <a href="#about-us">About Us</a>
+              <a href="#upcommingEvents">Upcomming Events</a>
+              <a href="#contact">Contact Us</a>
+              <a href="https://ecourses.worldonvastu.com/energy-courses/login">My Courses</a>
+            </nav>
+            <a href="#course" class="enroll-btn">Enroll Now</a>
+
+            <button class="hamburger hamburger--slider" type="button">
+              <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+              </span>
+            </button>
+
+            <div class="mobile-nav-items">
+              <nav class="nav-links-mobile">
+                <a href="#course">All Course</a>
+                <a href="#testimonials">Testimonials</a>
+                <a href="#about-us">About Us</a>
+                <a href="#upcommingEvents">Upcomming Events</a>
+                <a href="#contact">Contact Us</a>
+                <a href="https://ecourses.worldonvastu.com/energy-courses/login">My Courses</a>
+                <a href="#course" class="enroll-btn-mobile">Enroll Now</a>
+              </nav>
+            </div>
+
+          </div>
+
+        </div>
+      </header>
+      <!-- Header Section End -->
+
+      <!-- Hero Section Start -->
+      <section id="hero-section">
+        <div class="container">
+          <div class="content-holder">
+            <div class="content">
+              <p class="highlighted">
+                Join <b>India's Largest</b> Community on
+                <b>ACMOS Lecher Antenna Training</b>
+              </p>
+              <h1>
+                One Stop Destination to Learn About <br />
+                <div class="animated-text-holder"></div>
+              </h1>
+              <!--<p class="note">
+                Join the community that has already created more than 200+
+                six-figure earners in a knowledge business. Get started today!
+              </p> -->
+              <a href="#course" class="action-btn">Become A Member</a>
+            </div>
+          </div>
+
+          <div class="image-holder">
+            <img src="https://ecourses.worldonvastu.com/wp-content/uploads/2024/09/PareshGosharMin.png"
+              alt="Paresh Goshar CEO" />
+
+            <div class="arrow">
+              <div class="play">
+                <a href="https://www.youtube.com/@astrovastuparesh" target="_blank"><i
+                    class="ri-play-large-fill"></i></a>
+              </div>
+              <img src="https://ecourses.worldonvastu.com/wp-content/uploads/2024/09/watch_video_line.svg" alt="Arrow"
+                class="line-bg">
+              <p class="arrow-text">Watch Video</p>
+            </div>
+
+          </div>
+        </div>
+      </section>
+      <!-- Hero Section End -->
+
+      <!-- Video Section Start -->
+      <section id="video-section">
+        <div class="video-section-container">
+          <div class="video-holder">
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/c8Fv1bQxjWc?si=x-qphao-iO9RALe8"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          <div class="background-element"></div>
+        </div>
+      </section>
+      <!-- Video Section End -->
+
+      <!-- Slider Section Start -->
+      <section id="slider-section">
+        <div class="slider-section-container">
+          <div class="image-carousel-holder">
+            <div id="image-carousel-1" class="splide" aria-label="Beautiful Images">
+              <div class="splide__arrows">
+                <button class="splide_arrow splide_arrow--prev left-arrow">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M10.8284 12.0007L15.7782 16.9504L14.364 18.3646L8 12.0007L14.364 5.63672L15.7782 7.05093L10.8284 12.0007Z">
+                    </path>
+                  </svg>
+                </button>
+                <button class="splide_arrow splide_arrow--next right-arrow">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M13.1717 12.0007L8.22192 7.05093L9.63614 5.63672L16.0001 12.0007L9.63614 18.3646L8.22192 16.9504L13.1717 12.0007Z">
+                    </path>
+                  </svg>
+                </button>
+              </div>
+
+              <div class="splide__track">
+                <ul class="splide__list">
+                  <li class="splide__slide" data-splide-interval="3000">
+                    <img
+                      src="https://pareshgoshar.worldonvastu.com/offline/Assets/Event/ALA - 1.webp"
+                      alt="Event" />
+                  </li>
+                  <li class="splide__slide" data-splide-interval="3000">
+                    <img
+                      src="https://pareshgoshar.worldonvastu.com/offline/Assets/Event/ALA - 4.webp"
+                      alt="" />
+                  </li>
+                  <li class="splide__slide" data-splide-interval="3000">
+                    <img
+                    src="https://pareshgoshar.worldonvastu.com/offline/Assets/Event/ALA - 7.webp"
+                      alt="" />
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="content-holder">
+            <div class="content-heading">
+              <p>01</p>
+              <p>LEARN</p>
+              <div class="line"></div>
+            </div>
+            <div class="content-data">
+              <div class="section-icon">
+                <i class="ri-fingerprint-line"></i>
+              </div>
+              <div>
+                <h2>
+                  Get Step by Step Methods & RoadMaps for
+                  <span>Mastering Occult Sciences</span>
+                </h2>
+                <p>
+                  Learn Advance Protocol Systems, Remedies and Strategies to
+                  Grow Your Business
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-line"></div>
+
+        <div class="slider-section-container">
+          <div class="content-holder">
+            <div class="content-heading">
+              <p>02</p>
+              <p>APPLY</p>
+              <div class="line"></div>
+            </div>
+            <div class="content-data">
+              <div class="section-icon">
+                <i class="ri-fingerprint-line"></i>
+              </div>
+              <div>
+                <h2>
+                  Practical Use Cases and Case Study to Boost Your
+                  <span>Practical Learnings</span>
+                </h2>
+                <p>
+                  Learn Advance Protocol Systems, Remedies and Strategies to
+                  Grow Your Business
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="image-carousel-holder">
+            <div id="image-carousel-2" class="splide" aria-label="Beautiful Images">
+              <div class="splide__arrows">
+                <button class="splide_arrow splide_arrow--prev left-arrow">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M10.8284 12.0007L15.7782 16.9504L14.364 18.3646L8 12.0007L14.364 5.63672L15.7782 7.05093L10.8284 12.0007Z">
+                    </path>
+                  </svg>
+                </button>
+                <button class="splide_arrow splide_arrow--next right-arrow">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M13.1717 12.0007L8.22192 7.05093L9.63614 5.63672L16.0001 12.0007L9.63614 18.3646L8.22192 16.9504L13.1717 12.0007Z">
+                    </path>
+                  </svg>
+                </button>
+              </div>
+
+              <div class="splide__track">
+                <ul class="splide__list">
+                  <li class="splide__slide" data-splide-interval="3000">
+                    <img
+                    src="https://pareshgoshar.worldonvastu.com/offline/Assets/Event/ALA - 2.webp"
+                      alt="Event" />
+                  </li>
+                  <li class="splide__slide" data-splide-interval="3000">
+                    <img src="https://pareshgoshar.worldonvastu.com/offline/Assets/Event/ALA - 6.webp"
+                      alt="" />
+                  </li>
+                  <li class="splide__slide" data-splide-interval="3000">
+                    <img
+                    src="https://pareshgoshar.worldonvastu.com/offline/Assets/Event/ALA - 8.webp"
+                      alt="" />
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Slider Section End -->
+
+      <!-- Course Section Start -->
+      <section id="course">
+        <div class="course-section-container">
+          <h2 class="section-heading">Our Courses</h2>
+
+          <div class="course-tags">
+            <span class="tags active">All</span>
+            <span class="tags">Basics</span>
+            <span class="tags">Advance</span>
+            <span class="tags">Professional</span>
+            <span class="tags">Masters</span>
+          </div>
+
+          <div class="course-holder">
+          </div>
+        </div>
+      </section>
+      <!-- Course Section End -->
+
+      <!-- Marquee Section Start -->
+      <section id="marquee-section">
+        <div class="marquee-section-container">
+
+          <div class="marquee-holder">
+            <div class="image-holder">
+              <img src="https://ecourses.worldonvastu.com/wp-content/uploads/2024/09/1.jpg" alt="">
+            </div>
+            <div class="image-holder">
+              <img src="https://ecourses.worldonvastu.com/wp-content/uploads/2024/09/2.png" alt="">
+            </div>
+            <div class="image-holder">
+              <img src="https://ecourses.worldonvastu.com/wp-content/uploads/2024/09/3.png" alt="">
+            </div>
+            <div class="image-holder">
+              <img src="https://ecourses.worldonvastu.com/wp-content/uploads/2024/09/4.jpg" alt="">
+            </div>
+            <div class="image-holder">
+              <img src="https://ecourses.worldonvastu.com/wp-content/uploads/2024/09/5.jpg" alt="">
+            </div>
+            <div class="image-holder">
+              <img src="https://ecourses.worldonvastu.com/wp-content/uploads/2024/09/6.jpg" alt="">
+            </div>
+            <div class="image-holder">
+              <img src="https://ecourses.worldonvastu.com/wp-content/uploads/2024/09/7.jpg" alt="">
+            </div>
+            <div class="image-holder">
+              <img src="https://ecourses.worldonvastu.com/wp-content/uploads/2024/09/8.jpg" alt="">
+            </div>
+            <div class="image-holder">
+              <img src="https://ecourses.worldonvastu.com/wp-content/uploads/2024/09/9.jpg" alt="">
+            </div>
+            <div class="image-holder">
+              <img src="https://ecourses.worldonvastu.com/wp-content/uploads/2024/09/10.jpg" alt="">
+            </div>
+          </div>
+
+          <div class="marquee-holder second">
+            <div class="image-holder">
+              <img src="https://ecourses.worldonvastu.com/wp-content/uploads/2024/09/11.jpg" alt="">
+            </div>
+            <div class="image-holder">
+              <img src="https://ecourses.worldonvastu.com/wp-content/uploads/2024/09/12.jpg" alt="">
+            </div>
+            <div class="image-holder">
+              <img src="https://ecourses.worldonvastu.com/wp-content/uploads/2024/09/13.jpg" alt="">
+            </div>
+            <div class="image-holder">
+              <img src="https://ecourses.worldonvastu.com/wp-content/uploads/2024/09/14.jpg" alt="">
+            </div>
+            <div class="image-holder">
+              <img src="https://ecourses.worldonvastu.com/wp-content/uploads/2024/09/15.jpg" alt="">
+            </div>
+            <div class="image-holder">
+              <img src="https://ecourses.worldonvastu.com/wp-content/uploads/2024/09/16.jpg" alt="">
+            </div>
+            <div class="image-holder">
+              <img src="https://ecourses.worldonvastu.com/wp-content/uploads/2024/09/17.jpg" alt="">
+            </div>
+            <div class="image-holder">
+              <img src="https://ecourses.worldonvastu.com/wp-content/uploads/2024/09/18.jpg" alt="">
+            </div>
+            <div class="image-holder">
+              <img src="https://ecourses.worldonvastu.com/wp-content/uploads/2024/09/19.jpg" alt="">
+            </div>
+            <div class="image-holder">
+              <img src="https://ecourses.worldonvastu.com/wp-content/uploads/2024/09/20.jpg" alt="">
+            </div>
+          </div>
+
+          <p class="youtube-link">
+            <a href="https://www.youtube.com/@astrovastuparesh" target="_blank">
+              Connect With Us On <i class="ri-youtube-fill"></i>
+            </a>
+          </p>
+
+        </div>
+      </section>
+      <!-- Marquee Section End -->
+
+      <!-- Testimonials Section Start -->
+      <section id="testimonials">
+
+        <div class="testimonial-section-container">
+          <h2 class="section-heading">What Our <span>Students</span> Say</h2>
+          <div id="image-carouse3" class="splide" aria-label="Beautiful Images">
+
+            <div class="splide__track testimonials-card-container">
+              <ul class="splide__list">
+                <li class="splide__slide" data-splide-interval="3000">
+                  <div class="testimonial-card">
+                    <div class="client-testimonials">
+                      <i class="ri-double-quotes-l"></i>
+                      <p>
+                        No Doubt at all on your explanation on the Lecher Antenna
+                        Benefits. Being a Vastu Consultant since last 26 Yrs this the
+                        most effective instrument to detect cosmic, telluric, magnetic,
+                        solar energy in the preacite of Vastu Shastra even though to
+                        detect any negative energy may be the Shalya DOsha, Shirayen,
+                        Vanshikaye easy to west grid or north to south grid or Geopathic
+                        Stress in a land. Great Sir.
+                      </p>
+                      <p class="client-name">- Rajeev Kaushik</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="splide__slide" data-splide-interval="3000">
+
+                  <div class="testimonial-card">
+                    <div class="client-testimonials">
+                      <i class="ri-double-quotes-l"></i>
+                      <p>
+                        Hello - I have been doing the practice everyday with Antenna
+                        including the Exercises.. and its going amazingly. Literally I
+                        had Cold and no Medicine was helping me. I energised and
+                        harmonised it with Antenna and in one medicine I was Healed. I
+                        am Practicing Daily for myself and people EveryDay and It has
+                        started moving clockwise anti-clockwise recently. I now charge
+                        Everything I use with Antenna and it has been giving me instant
+                        results. I have even experimented with that.. like I charged my
+                        aura cleansing spray with Antenna and now I only have to spray
+                        it few times and my energies and any objects energies gets
+                        harmonises in a minute.
+                      </p>
+                      <p class="client-name">- Gargi Aggarwal</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="splide__slide" data-splide-interval="3000">
+                  <div class="testimonial-card">
+                    <div class="client-testimonials">
+                      <i class="ri-double-quotes-l"></i>
+                      <p>
+                        I am actually started after attending yesterday's session. I am
+                        surprised to know about the transformation of Energy According
+                        to your Needs. Hats off for your so deep study about it. I
+                        appreciate your Knowledge. Thank You So Much for your
+                        Knowledgeable lecture.
+                      </p>
+                      <p class="client-name">- Alka Agarwal</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="splide__slide" data-splide-interval="3000">
+
+                  <div class="testimonial-card">
+                    <div class="client-testimonials">
+                      <i class="ri-double-quotes-l"></i>
+                      <p>
+                        Hello - I have been doing the practice everyday with Antenna
+                        including the Exercises.. and its going amazingly. Literally I
+                        had Cold and no Medicine was helping me. I energised and
+                        harmonised it with Antenna and in one medicine I was Healed. I
+                        am Practicing Daily for myself and people EveryDay and It has
+                        started moving clockwise anti-clockwise recently. I now charge
+                        Everything I use with Antenna and it has been giving me instant
+                        results. I have even experimented with that.. like I charged my
+                        aura cleansing spray with Antenna and now I only have to spray
+                        it few times and my energies and any objects energies gets
+                        harmonises in a minute.
+                      </p>
+                      <p class="client-name">- Gargi Aggarwal</p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Testimonials Section End -->
+
+      <!-- About Us Section Start -->
+      <section id="about-us">
+        <div class="about-container">
+
+          <div class="left">
+            <div class="about-left-data">
+              <p class="number-data" data-count="10">0+</p>
+              <p>Awards</p>
+            </div>
+            <div class="about-left-data">
+              <p class="number-data" data-count="5">0+</p>
+              <p>Countries</p>
+            </div>
+            <div class="about-left-data">
+              <p class="number-data" data-count="5500">0+</p>
+              <p>Students</p>
+            </div>
+
+            <div class="about-left-data">
+              <p class="number-data" data-count="15">0+</p>
+              <p>Courses</p>
+            </div>
+            <div class="about-left-data">
+              <p class="number-data" data-count="50">0+</p>
+              <p>Workshops & Seminars</p>
+            </div>
+          </div>
+
+          <div class="right">
+
+            <div class="details-section">
+              <h2>Meet Your <span>Trainer</span></h2>
+
+              <div class="details">
+                <div class="flex gap-12">
+                  <i class="ri-award-fill"></i>
+                  <p>
+                    I'm Paresh Goshar, an International Trainer with a background
+                    in pharmacy, having transitioned from being a chemist to a
+                    dedicated healer. In the dynamic realm of Consulting &
+                    Coaching, I've been successfully running my business for 25
+                    years, offering my expertise both online and through on-site
+                    visits.
+                  </p>
+                </div>
+
+                <div class="flex gap-12">
+                  <i class="ri-award-fill"></i>
+                  <p>
+                    I've trained over 5000+ individuals in both paid and free
+                    programs. My commitment to continuous learning is reflected in
+                    the 10 days I dedicate to exploring new knowledge and
+                    conducting research, complemented by 20 days of active work
+                    each month.
+                  </p>
+                </div>
+                <div class="flex gap-12">
+                  <i class="ri-award-fill"></i>
+                  <p>
+                    My passion lies in delving deeper into the fascinating world
+                    of energy, making it a dedicated hobby.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="image-holder">
+              <img src="https://ecourses.worldonvastu.com/wp-content/uploads/2024/09/PareshGosharMin.png"
+                alt="Paresh Goshar" />
+            </div>
+
+            <div class="right-arrow">
+              <i class="ri-arrow-left-s-line"></i>
+            </div>
+
+          </div>
+        </div>
+
+      </section>
+      <!-- About Us Section End -->
+
+      <!-- UpComming Events Start -->
+      <section id="upcommingEvents">
+        <div class="upcommingEvents-section-container">
+
+          <div class="header">
+            <p>Join Us</p>
+            <h2 class="section-heading">
+              UpComing Events
+              <span class="strike">
+                <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 15.6">
+                  <path class="st0"
+                    d="M206.8 7.3l-.1.3c.1-.2.2-.3.1-.3zM234.7 10h-.1c-.2.4-.1.3.1 0zM54.8 4.2l-.6-.4c.2.4.4.5.6.4zM17.1 5.1zM34.5 9.6l.1.3c0-.2 0-.3-.1-.3zM22.4 10.8c-.3-.1-.7-.1-1-.1.2.1.7.1 1 .1zM17.5 5c-.1.1-.2.1-.4.2.2-.1.3-.2.4-.2zM52.7 9.8l.5.9c-.1-.3-.3-.6-.5-.9zM19.5 11.6c-.2-.2-.4-.2-.6-.3 0 .2.3.3.6.3zM120.9 11.4c-.1.1-.2.2-.2.3.3-.1.3-.2.2-.3zM80.9 10.4h-.1s.1.1.2.1l-.1-.1zM92.6 10.4l-.2.2c.2-.1.2-.1.2-.2zM72.1 11.3c-.1.1-.3.2-.4.3l.4-.3z" />
+                  <path class="st0"
+                    d="M260 6c-1-.6-4.7-1.2-5.8.3-.2-.1.1-.3.2-.4-.9.2-2.2.1-3.6 0s-2.9-.2-4.2 0c-1 1.5-3.9-.6-4.8 1.4l.5-.4c.9.5-1.2 1.4-1.5 1.9-.8-1.2-.1-1-1-2l1.1.4-.3-1c-3.1 2.8-6.2-.9-8.2 1.1.1-.1.1-.3.2-.4-1.4-.5-2.3.8-3.3 1.2-.1-.5.6-.9 1.1-1.3-2.4-.3-6.4 1.2-9 .4-.9.7.4.9-.6 1.5-.8-.2-1.4-.7-.4-1.1-2.3-1.2-7.6 1-11.1-.2-1.8.8-.7 1.1-3.5 1.6.7-.5-.7-1.7 1-1.7l.2-.5c-2.8-.1-6.6-.3-8.1 1.2-.1-1.1-.5-.2-1.6-.8-.4.1 0 .2.2.2-1 .9-1.6-.1-2.3.1l.3-.2-2 .7c-.3-.2-.8-.4-.9-.7v.8c-1.1 0-.5-1-1.9-.8l.3.6c-.9-.4-2.2.4-2.4-.5 0-.2.1-.1.4-.1-1.3-1.2-3.5.3-5.1-.3l.4 1.3c-1.6.4-1-.3-.9-.7-1.1 0-1.3-.4-2.7-.6-.7.3-.4.5-.6.8l-1.5-.4 1-.7c-2.3 1.8-5.6-.4-7.2 1.2-.8-.4.8-.7.3-1-2.6-.9-6 1-8.2 0-3.6-1-7.8-.4-11.8-1.1l.1.3-2.9-.4c-.8.7-2.7.3-4 1.1.1-.3-.1-.7.2-.9-1.2.1-2.6.4-3.3-.1l.4-.3c-2.7-.3-6.4-.5-7.9.1-.9 0-.9-.6-1.1-1-1.6-.1-2.6.2-3.9.7-.3-.2-.7-.3-1-.6l-.6.8c-.6-.1-.1-.7-.6-.9-2.5.9-5.3-.1-7-.1l.2.4c-.7.3-2.1-.3-1.2-.7-3.4-.6-5.1 1.2-9.6.8-.6-1.5-4.1.3-4.8-1.4-1.9.4-3.2-.3-4.5.6 0-.2-.2-.2.1-.3-.8-.6-3.3-.2-5.3.2l-.1-.5c-.9 1.2-4.2.9-4.9 2-.2-.2.4-.5.7-.7-1-1.1-1.8.5-3.1.2.1-.3-.3-.6 0-.8-4.4-1.2-10.6.7-16.3-.1-1.6 0 .6 1.2-1.5 1.1-.6-.6 1-1.1-.3-1.4-.9.7-1.3.5-2.6.5.2-.4 0-.6.9-.9-.7-.5-3.1.9-4.5 0 .1.3-.2.5-.5.7-2.1 1-4.9-.9-5.1-.4 0 0-.7.2-.1.3-.8 0-1.9-.2-1.7-.7-.4.3-.8.8-1.4.8l.3-.6c-.4.1-.8.5-1.1.6l.6.4c-.9-.5-2.6.8-2.6-.4h.3l-1.7-.5c-.7.5-1.3 1-2.5.9-.5-1.3-2.9-.2-4.3-.3l.1-.4c-1.1.6-4 .4-3.5.6-1.1 0-2.6-.2-2-.6-.8.1-2.7.1-3.2.9l-1.8-1c-1 1.6-3.6-.5-3.6 1.2-1-.2-.8-.6-1.5-.9-1.4.9-2.8.8-4.2.7v-.2c-1.4-.1-3.1.8-5.1 1l-.5-1.2c-1 .2-1.3 1.2-2.3 1-.2-.2 0-.3.2-.3-1 .3-2.3.1-3.1-.2-1.5 1-2.7.7-3.9 1.8-1.3-1 1.7-.6.6-1.6-2.2-.4-4.4.4-6.7 1.1-.2-.2 0-.4.1-.7 0 0-1.2.9-2.2 1.8C.9 8.3 0 9.4.5 10c-.5.9-1.2 1.4.9 2 .6-.5 2.5-1.3 2.9-.4l.1-.9c2.6-.6.4 1.8 3.6 1.6l-.7-.3c.6-.1 1.1-.7 1.8-.5.2.2-.2.4-.5.6.9-.5 1.7-.9 2.6-1.4.1.5.1.8-.4 1.2 2.5-.2-.6-1.6 2.4-1.4.6.4-.2.6-.5.9 1.4.7 2.3-.1 3.8-.6.1.8-.9.7.3 1.2-.3-.4-.5-1.1.5-1.2-.4.8.7.4 1.6.5-.2-.3-.1-.6.2-.8.4-.1.8.1 1.4.1l-1.1-.7c1.5-.8 2.4.3 3.6.6-.1.1-.3.3-.5.3 1.2.3 2.5.9 4.1.1l-.3.1c2.9-.9-1-1.3 2.4-2.2 1.1.1-.4 2.6 2.1 1.6-1.3-.6 1.6-1.7 3.1-2L32.4 10c.6 0 1.6-.5 2-.3l-.1-.3c-.2-1.3 1.9.1 3-.7-1.3 1.8-1.4 1.5-1.6 3.2 1-1 2.2-1.9 4.1-1.8l-1.5 1.4c2.5.2 5.5-1.9 7.6-3-.5 1 .3 1.4-.6 2.2l2.4-.3-.7 1.1c1-1.2 2.1-.4 1.9-1.9-.3.2-.2.4-.7.3.1-.4.5-1.4 1.7-1.3.9.3-.5.6-.2 1 .8-.6.9.3 1.7-.1l-.8-.6c.6-.9 1.4-.1 2.2-.5-1 .4-.7.9-.3 1.4l-.1-.1c.8-.1 1.6-.7 2-.2l-.5 1.2.9-.9c.3.1.6.6 0 .8 2.8.7-.1-2.5 3.6-1.5 0 .5-.4.8-1.4.5-.2.7.1 1.1 1.1 1.4v.1c1.9 0 4.4 0 5.6-.8.4.3 0 .6-.4.9 2.1.4 2.8-.7 5 .1l-1-.4c1.4-.6 4-.8 5.3.1l-.4.3c1.3-.7 3.5.6 4 0-.6-.4 0-.6-.8-1l3.4-.7.2 1.2 1.8-.4c-.4-.5 2.4.4 2.5-.7 1 .4-.4.9-.8 1.4 1-.3 1.1.2 2.1-.5l1 1.1 2.6-.7c-.1.1 0 .2-.1.3 1.2-.9 3.1.6 4.6-.9-.1.1-.1.1-.1.2.9-.8 2.9-.2 3.7 0 1.4-.2.6-1 .6-1.4 3.9.4 2.7.3 6-.9 2 1.4-2.4 2.1.1 3 .4-.6 2.1-1.1 4.1-1.3 1.8.5 4.8.9 6.5 1.9l-.2-.9 2.6-.4-1.5 1.2c.4-.3 1.7-.8 2.6-1.2 2.7-.7 1.4 1.9 3.5.7.1.1.1.2.2.3.7-.6 2.4-.3 4.4-.5l-.7 1.1-1.3-.3c.7 1.1 2.1-.1 3.4 0 1.3-.3.7-1.3 1.4-1.6.5.1 1.2-.2 1.6.1 1.1.4.1 1.3-.3 1.8 1-1.1 1.4-.9 3.6-1.3.1.5-.1.8-.4.9.5-.1.9-.3 1.2-.8l.7.7c2.5 1 2.6-2 5.6-1.5-.8.6 2.6 0 3.5.7-1.1.1.4 1.6-.2 2.3 2.4.5 1-1.3 3-1.4l-.9 1.3c1.9-.5.5-.7 2.4-1.1-.5.4.8.4-.3.8 2.5.2 1.9.1 4.1.3l.2-1.3c.7-.1 1 .5 1.2.7-.3 0-.8-.1-.7.1.8 1.2 1.4-.6 2.4.5-.2-.4-.5-1 .4-1.1-.3.8 1.4.8 1.4 1.2-.6-.6 2-.2 2.1-1 1 .7-.4.6-.4 1.1.9-1 3.7 0 4.6-.6 0 .1.1.1.1.2 1.2-.6 3-.7 5.3-1.5l-.8.7c2.2.4 1.4-1.5 3.3-1.5-.4 1.1 3.1 0 2.2 1.2 1.1-.6 2.3-.8 3.1-1.7 1 .6-2.1 1.4-.6 1.8l1.6-.5.3.6c.1-.4 1.5-.4 1.4-.8.2.7.9 1.2.8 1.8 1-.2 2.4.5 3.3-.1l.1.3c1-1.3 3.1-.2 3.6-1.5l.6.7c1.5-.1 1.3-1.5 2-1.8.6 0 1.4-.2 2 0-2 .8 1 1.1 1.4 1.6.8 0 3.1 0 3.7-.7-1 .7-.4 1.2-2.1 1.3.9 1.3 2.6-.2 4.5-.1v.6c2.7-.4 2.8-1.5 4-2.5.3.8.1 1-.7 1.7 1.8.5 4.7-.1 6.7 0 .6.5.2.9-.5 1.1 2.1-.6 4.7.1 6-1.2-.5.5.9.3 1.6.6 0-.3.1-.6.2-.6 1.3-.6 4.1-1.1 5.6-.7l-.5.4c1.7.1 3-.5 4.3-.9 1.3-.4 2.6-.8 4.5-.4.7.3-.7 1.1.7 1 .7-.5.4-1.5 2.2-1.3l-.1.9 1.2-.9c-.7-.7-2.6-.4-1.3-1.2 1.6.8 1.3-.9 3.3 0-.4.1-1 .8-1.3 1.2 2 .4 3.4.1 4.8-.1 1.4-.3 2.8-.6 4.9-.2 2-.8 4.6-1.2 5.9-1.9 0 .9 0 1.7-.8 2.4 1.8 0 2.4-2.1 3.7-.9.7-1.3 4.7-1.2 5-3l2-.8z" />
+                  <path class="st0"
+                    d="M58.1 11.1c-1 0-1.9 0-2.3.2.2.2 2.3.6 2.3-.2zM208.2 13.3c-.1 0-.3.1-.4.1.1 0 .3 0 .4-.1zM216.3 12.9c-.1-.1-.2-.2-.4-.3 0 .3.1.5.4.3zM132.6 11.5zM178.5 13.7c.7-.4 1-.7 1-1-.4.1-.7.3-1 1zM163 12.6c-.1.1-.2.1-.3.2.3-.1.3-.2.3-.2zM130.2 12c.7-.4 1.6-.3 2.4-.5-.7.2-1.9-.3-2.4.5zM226.1 11.4l-.7.6.8-.4zM218.6 12c-.3-.1-1.7.3-1.3.6.4-.3.9-.5 1.3-.6zM189.6 11.4l-.3.6.7-.5z" />
+                </svg>
+
+              </span>
+            </h2>
+
+          </div>
+
+          <div class="upcomming-events">
+            <div class="events">
+
+              <div class="event">
+                <div class="line"></div>
+                <div class="events-details-holder">
+                  <div class="event-name">3 Days ACMOS Lecher Antenna Training Physical Event
+                  </div>
+                  <div class="event-details">
+                    <p>🗓️ 2nd - 4th May, 2025</p>
+                    <div class="line"></div>
+                    <p>⌚ 9:00 Am - 06:00 Pm IST</p>
+                    <div class="line"></div>
+                    <p>📍 Hotel Suba International, Andheri East, Mumbai
+                    </p>
+                  </div>
+                  <a href="https://pareshgoshar.worldonvastu.com/offline/" target="_blank" class="join-btn">Register
+                    Now</a>
+                </div>
+              </div>
+<!--
+              <div class="divider"></div>
+
+              <div class="event">
+                <div class="line"></div>
+                <div class="events-details-holder">
+                  <div class="event-name">5 Days Energy Vaastu Practical Training</div>
+                  <div class="event-details">
+                    <p>🗓️ 7th - 11th January, 2025</p>
+                    <div class="line"></div>
+                    <p>⌚ 10:00 Am - 06:00 Pm IST</p>
+                    <div class="line"></div>
+                    <p>📍 Hotel Suba International, Andheri East, Mumbai
+                    </p>
+                  </div>
+                  <a href="https://pareshgoshar.worldonvastu.com/offline/" target="_blank" class="join-btn">Register
+                    Now</a>
+                </div>
+              </div>
+
+              <div class="divider"></div>
+
+              <div class="event">
+                <div class="line"></div>
+                <div class="events-details-holder">
+                  <div class="event-name">3 Days ACMOS Lecher Antenna Training Physical Event
+                  </div>
+                  <div class="event-details">
+                    <p>🗓️ 3rd - 5th March, 2024</p>
+                    <div class="line"></div>
+                    <p>⌚ 10:00 Am - 06:00 Pm IST</p>
+                    <div class="line"></div>
+                    <p>📍 Hotel Suba International, Andheri East, Mumbai
+                    </p>
+                  </div>
+                  <a href="https://pareshgoshar.worldonvastu.com/offline/" target="_blank" class="join-btn">Register
+                    Now</a>
+                </div>
+              </div>
+
+            
+-->
+            </div>
+
+            <div class="image">
+              <img src= "https://pareshgoshar.worldonvastu.com/offline/Assets/Event/ALA - 5.webp" alt="">
+            </div>
+          </div>
+
+        </div>
+      </section>
+      <!-- UpComming Events End -->
+
+      <!-- Tags Section Start -->
+      <section id="tags-section">
+        <div class="tags-section-container">
+          <div class="tags-container">
+
+
+            <div class="tags left">
+
+              <div class="tag">
+                Vastu Shastra Consultant
+                <i class="ri-home-5-line"></i>
+              </div>
+
+              <div class="tag">
+                Feng Shui Consultant
+                <i class="ri-hourglass-line"></i>
+              </div>
+
+              <div class="tag">
+                Healers
+                <i class="ri-hospital-line"></i>
+              </div>
+
+              <div class="tag">
+                Pendulum Dozing Consultant
+                <i class="ri-arrow-right-up-line"></i>
+              </div>
+
+              <div class="tag">
+                Numerologist Consultant
+                <i class="ri-numbers-fill"></i>
+              </div>
+
+              <div class="tag">
+                Name Numerologist Consultant
+                <i class="ri-pencil-line"></i>
+              </div>
+
+              <div class="tag">
+                Individuals Interested in Occult Studies
+                <i class="ri-compasses-2-line"></i>
+              </div>
+
+              <div class="tag">
+                Astrologers
+                <i class="ri-command-line"></i>
+              </div>
+
+              <div class="tag">
+                Tarot Readers
+                <i class="ri-send-to-back"></i>
+              </div>
+
+              <div class="tag">
+                Life Coaches and Counselors
+                <i class="ri-secure-payment-line"></i>
+              </div>
+            </div>
+
+
+            <div class="img-holder">
+              <img src="https://ecourses.worldonvastu.com/wp-content/uploads/2024/09/Logo.png" alt="">
+              <p class="name">Paresh Goshar's <span>Community</span></p>
+            </div>
+
+            <div class="tags right">
+
+              <div class="tag">
+                Personal Development Enthusiasts
+                <i class="ri-supabase-line"></i>
+              </div>
+
+              <div class="tag flex-end">
+                Industrial Vastu Consultants
+                <i class="ri-building-line"></i>
+              </div>
+
+              <div class="tag">
+                Acharya Consultant
+                <i class="ri-flower-line"></i>
+              </div>
+
+              <div class="tag flex-end">
+                All Trainers and Coaches
+                <i class="ri-presentation-line"></i>
+              </div>
+
+              <div class="tag">
+                Influencers
+                <i class="ri-bard-line"></i>
+              </div>
+
+              <div class="tag flex-end">
+                Creators
+                <i class="ri-video-on-line"></i>
+              </div>
+
+              <div class="tag">
+                Entrepreneurs and Business Professionals
+                <i class="ri-shake-hands-line"></i>
+              </div>
+
+              <div class="tag flex-end">
+                Curious Individuals
+                <i class="ri-user-line"></i>
+              </div>
+
+              <div class="tag">
+                Instagram Reel Content Creator
+                <i class="ri-instagram-line"></i>
+              </div>
+
+              <div class="tag flex-end">
+                YouTube Creator
+                <i class="ri-youtube-line"></i>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Tags Section End -->
+
+      <!-- Community Post Section Start -->
+      <section id="community-members-section">
+
+        <div class="community-members-section-conatiner">
+          <img src="https://ecourses.worldonvastu.com/wp-content/uploads/2024/09/community-banner-min.png"
+            alt="Community Post" loading="lazy">
+          <h2>Our <span>Community</span> Members
+            <br>
+            From All Over The <span>World</span>
+          </h2>
+          <!-- <h2>Our Community Members
+            <br>
+            From All Over The World
+          </h2> -->
+          <div class="black-tint"></div>
+        </div>
+
+      </section>
+      <!-- Tags Section End -->
+
+      <!-- Form Section Start -->
+      <section id="contact">
+        <div class="Form-section-container">
+
+          <h2 class="section-heading"><span>Request A Free Call Back</span></h2>
+
+          <form action="">
+            <div class="form-holder">
+
+              <div class="left">
+                <div class="input-holder">
+                  <small>Name</small>
+                  <input type="text" name="" id="">
+                </div>
+                <div class="input-holder">
+                  <small>Email</small>
+                  <input type="text" name="" id="">
+                </div>
+                <div class="input-holder">
+                  <small>Phone</small>
+                  <input type="number" name="" id="">
+                </div>
+              </div>
+
+              <div class="right">
+                <div class="input-holder">
+                  <small>Message</small>
+                  <textarea type="text" name="" id="" placeholder="Enter Your Message Here"></textarea>
+                </div>
+                <input type="submit" name="" id="" value="Get a Callback">
+              </div>
+
+
+            </div>
+          </form>
+
+
+        </div>
+      </section>
+      <!-- Form Section End -->
+
+      <!-- FAQ Section Start -->
+      <section id="FAQs">
+        <div class="faq-container">
+          <h3 class="section-heading">FAQs</h3>
+          <div class="FAQ-holder">
+            <div class="faq">
+              <div class="question">
+                <p>What are the prerequisites for enrolling in this course?</p>
+                <i class="ri-add-line"></i>
+              </div>
+              <p class="answer">There are no specific prerequisites.</p>
+            </div>
+
+            <div class="faq">
+              <div class="question">
+                <p>What topics will be covered in the course?</p>
+                <i class="ri-add-line"></i>
+              </div>
+              <p class="answer">
+                The course covers a wide range of topics, each courses topics
+                are different.
+              </p>
+            </div>
+
+            <div class="faq">
+              <div class="question">
+                <p>How is the course content delivered?</p>
+                <i class="ri-add-line"></i>
+              </div>
+              <p class="answer">
+                The course content is delivered through a combination of video
+                lectures, reading materials, quizzes, and interactive
+                assignments.
+              </p>
+            </div>
+
+            <div class="faq">
+              <div class="question">
+                <p>How long will I have access to the course materials?</p>
+                <i class="ri-add-line"></i>
+              </div>
+              <p class="answer">
+                You will have limited time access to the course materials.
+              </p>
+            </div>
+
+            <div class="faq">
+              <div class="question">
+                <p>
+                  Is there any hands-on or practical component in the course?
+                </p>
+                <i class="ri-add-line"></i>
+              </div>
+              <p class="answer">
+                Yes, the course includes practical assignments and projects to
+                help you apply what you learn.
+              </p>
+            </div>
+
+            <div class="faq">
+              <div class="question">
+                <p>How long does the course take to complete?</p>
+                <i class="ri-add-line"></i>
+              </div>
+              <p class="answer">
+                The course is self-paced and can be completed in estimated
+                duration of 3-5 weeks based on a suggested 2-5 number of hours
+                per week.
+              </p>
+            </div>
+
+            <div class="faq">
+              <div class="question">
+                <p>Are there any live sessions or fixed schedules?</p>
+                <i class="ri-add-line"></i>
+              </div>
+              <p class="answer">
+                The course is entirely self-paced, but there are optional live
+                Q&A sessions held monthly.
+              </p>
+            </div>
+
+            <div class="faq">
+              <div class="question">
+                <p>How much does the course cost?</p>
+                <i class="ri-add-line"></i>
+              </div>
+              <p class="answer">
+                Each Course Cost Differs on which you choose to Enroll.
+              </p>
+            </div>
+
+            <div class="faq">
+              <div class="question">
+                <p>Do you offer any discounts or scholarships?</p>
+                <i class="ri-add-line"></i>
+              </div>
+              <p class="answer">
+                Yes, we offer discounts for specific groups, e.g., early bird,
+                students, etc.. Please check our website for current offers.
+              </p>
+            </div>
+
+            <div class="faq">
+              <div class="question">
+                <p>What payment methods do you accept?</p>
+                <i class="ri-add-line"></i>
+              </div>
+              <p class="answer">
+                We accept Direct Bank Transfer, UPI’s Payment Method & RazorPay
+                Payment Gatway to accept Credit Card Payment.
+              </p>
+            </div>
+
+            <div class="faq">
+              <div class="question">
+                <p>Will I receive a certificate upon completion?</p>
+                <i class="ri-add-line"></i>
+              </div>
+              <p class="answer">
+                Yes, you will receive a certificate of completion once you
+                finish all the course requirements.
+              </p>
+            </div>
+
+            <div class="faq">
+              <div class="question">
+                <p>
+                  Is there any support available if I have questions during the
+                  course?
+                </p>
+                <i class="ri-add-line"></i>
+              </div>
+              <p class="answer">
+                Yes, we offer support through
+                <br>
+                <span class="imp">Email - astrovastuparesh@gmail.com</span>
+                <br>
+                <span class="imp">Whatsapp - +91&nbsp;91529 37135.</span>
+                <br>
+                Our instructors and support team
+                are here to help you.
+              </p>
+            </div>
+
+            <div class="faq">
+              <div class="question">
+                <p>Can I interact with other students?</p>
+                <i class="ri-add-line"></i>
+              </div>
+              <p class="answer">
+                Yes, you can interact with other students through our mastermind
+                sessions.
+              </p>
+            </div>
+
+            <div class="faq">
+              <div class="question">
+                <p>What is your refund policy?</p>
+                <i class="ri-add-line"></i>
+              </div>
+              <p class="answer">We Do Not Offer any Refund Policy</p>
+            </div>
+
+            <div class="faq">
+              <div class="question">
+                <p>
+                  What are the technical requirements for taking this course?
+                </p>
+                <i class="ri-add-line"></i>
+              </div>
+              <p class="answer">
+                You will need a computer/smartphone/tablet with internet access.
+                For video content, we recommend a stable internet connection.
+              </p>
+            </div>
+
+            <div class="faq">
+              <div class="question">
+                <p>Can I preview the course before enrolling?</p>
+                <i class="ri-add-line"></i>
+              </div>
+              <p class="answer">
+                Yes, we offer a free preview of the course on YouTube Channel.
+                You can access it at -
+                <a href="https://www.youtube.com/@astrovastuparesh/videos" class="imp">Youtube Link</a>
+              </p>
+            </div>
+
+            <div class="faq">
+              <div class="question">
+                <p>How do I enroll in the course?</p>
+                <i class="ri-add-line"></i>
+              </div>
+              <p class="answer">
+                You can enroll by clicking the "Enroll Now" button on our course
+                page and following the registration process.
+              </p>
+            </div>
+
+            <div class="faq">
+              <div class="question">
+                <p>How do I access the course after enrolling?</p>
+                <i class="ri-add-line"></i>
+              </div>
+              <p class="answer">
+                Once you enroll, you will receive an email with login details
+                and instructions on how to access the course materials.
+              </p>
+            </div>
+
+            <div class="faq">
+              <div class="question">
+                <p>
+                  What happens if I have trouble accessing the course or
+                  materials?
+                </p>
+                <i class="ri-add-line"></i>
+              </div>
+              <p class="answer">
+                If you experience any issues, please contact our support team at
+                <br>
+                <span class="imp">Email - astrovastuparesh@gmail.com</span>
+                <br>
+                <span class="imp">Whatsapp - +91 9152937135</span>
+                <br>
+                and we'll assist you promptly.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- FAQ Section End -->
+
+      <!-- PopUp OverLay Start -->
+      <div class="overlay">
+
+        <div class="popup">
+          <i class="ri-close-large-line close-btn"></i>
+
+
+          <div class="img-holder">
+            <img src="https://ecourses.worldonvastu.com/wp-content/uploads/2024/09/dont-miss-out.png" alt="">
+          </div>
+
+          <div class="count-down">
+
+            <div class="number hours">
+              <p>00</p>
+              <small>Hours</small>
+            </div>
+            <div class="number minutes">
+              <p>00</p>
+              <small>Minutes</small>
+            </div>
+            <div class="number seconds">
+              <p>00</p>
+              <small>Seconds</small>
+            </div>
+
+          </div>
+
+          <a href="#payment-block" class="enroll-btn">Enroll Now</a>
+
+          <p class="note">Claim Your Discount offer before its gone !</p>
+
+        </div>
+      </div>
+      <!-- PopUp OverLay End -->
+
+      <!-- Footer Start -->
+      <footer>
+
+        <div class="footer-section-container">
+
+          <div class="footer-top">
+
+            <div class="left-section">
+              <div class="brand-info">
+                <h3>World On Vastu | Paresh Goshar</h3>
+                <p>World On Vastu is World's leading Energy Vaastu, Lecher Antenna, AstrooVaastu, Modern Vaastu,
+                  Astrology,
+                  Numerology training provider institute with so many reviews. Our reviews can be found on our Facebook
+                  Page, Youtube Channel, Google Business Listing Page and at our website also. We feel proud to have
+                  such
+                  reviews for us. We value our Students, Participants, Clients & Customer and guide them in the right
+                  path
+                  so that, they can learn AstrooVaastu and implement it to live a good life. World On Vastu Mumbai
+                  reviews
+                  are mainly for Vaastu online training, AstrooVaastu Course, Modern Vaastu Course, Lecher Antenna
+                  Training
+                  Course. So, come and join us for best AstrooVaastu, Vaastu training & Consultations. If you are
+                  willing
+                  to
+                  join us, you can also see some reviews and join our AstrooVaastu & Vaastu training program.</p>
+              </div>
+            </div>
+
+
+            <div class="right-section">
+
+              <div class="links-holder">
+                <div class="header">Useful Links</div>
+                <div class="links">
+                  <a href="#about">About Us</a>
+                  <a href="#testimonials">Testimonials</a>
+                  <a href="#course">Contact Us</a>
+                  <a href="#course">All Courses</a>
+                  <a href="https://worldonvastu.com/disclaimer/">Disclamer</a>
+                </div>
+              </div>
+
+
+              <div class="links-holder">
+                <div class="header">Contact Us</div>
+                <div class="links">
+                  <p>WhatsApp : +91 &nbsp; 9152937135</p>
+                  <p>Email : astrovastuparesh@gmail.com</p>
+
+                  <div class="social-links">
+                    <a href="https://youtube.com/@astrovastuparesh?feature=shared"><i class="ri-youtube-fill"></i></a>
+                    <a href="https://www.instagram.com/pareshgoshar?igsh=N21saDJ2M2Vyem1q"><i
+                        class="ri-instagram-line"></i></a>
+                    <a href="https://www.facebook.com/share/TLg998HsVbfY52DZ/?mibextid=qi2Omg"><i
+                        class="ri-facebook-circle-line"></i></a>
+                  </div>
+
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+
+          <div class="line"></div>
+          <p class="copy-right">Copyright © <span id="year">2024</span> World On Vastu. All Rights Reserved.</p>
+
+        </div>
+      </footer>
+      <!-- Footer End -->
+    </div>
+  </div>
+</body>
+
+<!-- Script Tag -->
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/CustomEase.min.js"></script>
+
+
+<!-- Script Js -->
+<script type="text/javascript">
+
+  document.addEventListener('DOMContentLoaded', () => {
+
+    gsap.registerPlugin(ScrollTrigger)
+
+    // --------- Sticky Advertisement Section --------- //
+
+    const stickyAdvtSection = document.querySelector('#advertisement-section')
+    const stickyAdvtSectionCloseBtn = document.querySelector('#advertisement-section .close-btn')
+
+    stickyAdvtSectionCloseBtn.addEventListener('click', () => {
+      stickyAdvtSection.style.display = 'none'
+      ScrollTrigger.refresh();
+    })
+
+    // --------- Mobile Navigation Function --------- //
+
+    const mobileNavItems = document.querySelector('.mobile-nav-items')
+    const hamBurger = document.querySelector('.hamburger')
+
+    const toggleNavBar = () => {
+      hamBurger.classList.toggle('is-active')
+      mobileNavItems.classList.toggle('active')
+    }
+
+    hamBurger.addEventListener('click', toggleNavBar)
+    mobileNavItems.addEventListener('click', toggleNavBar)
+
+
+    // --------------- PopUp Function --------------- //
+
+    const startPopUpCountdown = () => {
+      let countdownTime = 15 * 60;
+
+      const countdownInterval = setInterval(() => {
+        const hours = Math.floor(countdownTime / 3600);
+        const minutes = Math.floor((countdownTime % 3600) / 60);
+        const seconds = countdownTime % 60;
+
+        document.querySelector('.number.hours p').textContent = String(hours).padStart(2, '0');
+        document.querySelector('.number.minutes p').textContent = String(minutes).padStart(2, '0');
+        document.querySelector('.number.seconds p').textContent = String(seconds).padStart(2, '0');
+
+        countdownTime--;
+
+        if (countdownTime < 0) {
+          clearInterval(countdownInterval);
+          document.querySelector('.overlay .enroll-btn').textContent = "Offer Expired";
+        }
+      }, 1000);
+    }
+
+    // Pop Up Timer
+    const showPopUp = () => {
+      const countdownTimeout = setTimeout(() => {
+        document.querySelector('.overlay').style.display = "grid";
+        startPopUpCountdown();
+      }, 1500)
+    }
+
+
+    document.querySelector('.overlay .close-btn').addEventListener('click', () => {
+      document.querySelector('.overlay').style.display = "none";
+    })
+
+    document.querySelector('.overlay .enroll-btn').addEventListener('click', () => {
+      document.querySelector('.overlay').style.display = "none";
+    })
+
+    // showPopUp();
+
+
+    // ----------- Slider JS Functions ---------
+
+    var splide1 = new Splide("#image-carousel-1", {
+      type: "fade",
+      rewind: true,
+      autoplay: "playing",
+      lazyLoad: 'nearby',
+    });
+
+    var splide2 = new Splide("#image-carousel-2", {
+      type: "fade",
+      rewind: true,
+      autoplay: "playing",
+      lazyLoad: 'nearby',
+    });
+
+    splide1.mount();
+    splide2.mount();
+
+
+    // ----------- Courses JS Functions ---------
+
+    const coursesList = [
+      {
+        name: '3 Days ACMOS Lecher Antenna Foundation Workshop',
+        imgSrc: 'https://ecourses.worldonvastu.com/wp-content/uploads/2024/09/ACMOS-Lecher-Antenna-3-Days-Workshop.png',
+        enrollLink: '',
+        desc: '',
+        level: 'basics'
+      },
+      {
+        name: 'Astro & Vastu',
+        imgSrc: 'https://ecourses.worldonvastu.com/wp-content/uploads/2024/09/Astroo-Vaastu.png',
+        enrollLink: '',
+        desc: 'An introductory course that provides a comprehensive overview of both astrology and Vaastu, laying the groundwork for more advanced studies.',
+        level: 'basics'
+      },
+      {
+        name: 'Basic KP Astrology',
+        imgSrc: 'https://ecourses.worldonvastu.com/wp-content/uploads/2024/09/K-P-Astrology.png',
+        enrollLink: '',
+        desc: 'This course introduces the fundamental concepts of KP Astrology, making it accessible for anyone interested in learning astrology from the ground up. It lays the groundwork for more advanced studies.',
+        level: 'basics'
+      },
+      {
+        name: 'Foundation Lo Shu Grid Numerology',
+        imgSrc: 'https://ecourses.worldonvastu.com/wp-content/uploads/2024/09/Foundation-Lo-Shu-Grid-Numerology.png',
+        enrollLink: '',
+        desc: 'An introductory course to Lo Shu Grid Numerology, covering the basics and setting the stage for more advanced studies. This course is perfect for beginners.',
+        level: 'basics'
+      },
+      {
+        name: 'Pendulum Dowsing',
+        imgSrc: 'https://ecourses.worldonvastu.com/wp-content/uploads/2024/09/Pendulum-Dowsing.png',
+        enrollLink: '',
+        desc: '',
+        level: 'basics'
+      },
+      {
+        name: 'ACMOS Lecher Antenna Level 1 Practical Training',
+        imgSrc: 'https://ecourses.worldonvastu.com/wp-content/uploads/2024/09/ACMOS-Lecher-Antenna-Level-1-Training.png',
+        enrollLink: '',
+        desc: '',
+        level: 'advance'
+      },
+      {
+        name: 'KP Nadi Red AstrooVaastu',
+        imgSrc: 'https://ecourses.worldonvastu.com/wp-content/uploads/2024/09/K-P-Nadi-Red-AstrooVaastu.png',
+        enrollLink: '',
+        desc: 'A specialized course that combines KP Astrology with Nadi and Vaastu principles. This course is designed for those looking to deepen their understanding and offer comprehensive consultations.',
+        level: 'advance'
+      },
+      {
+        name: 'Professional Lo Shu Grid Numerology',
+        imgSrc: 'https://ecourses.worldonvastu.com/wp-content/uploads/2024/09/Professional-Lo-Shu-Grid-Numerology.png',
+        enrollLink: '',
+        desc: 'This advanced course takes you through the intricacies of Lo Shu Grid Numerology, offering professional techniques to interpret and predict life patterns. It’s designed for those who want to offer numerology consultations.',
+        level: 'advance'
+      },
+      {
+        name: 'ACMOS Lecher Antenna Level 2 Practical Training',
+        imgSrc: 'https://ecourses.worldonvastu.com/wp-content/uploads/2024/09/ACMOS-Lecher-Antenna-Practical-Level-2.png',
+        enrollLink: '',
+        desc: '',
+        level: 'professional'
+      },
+      {
+        name: 'FlagShip AstrooVaastu',
+        imgSrc: 'https://ecourses.worldonvastu.com/wp-content/uploads/2024/09/Flagship-Astro-Vastu.png',
+        enrollLink: '',
+        desc: 'This course offers advanced training in AstroVaastu, enabling you to offer professional consultations. It covers both theoretical knowledge and practical applications.',
+        level: 'professional'
+      },
+      {
+        name: '16 Zone Modern Vaastu',
+        imgSrc: 'https://ecourses.worldonvastu.com/wp-content/uploads/2024/09/Modern-Vaastu.png',
+        enrollLink: '',
+        desc: 'A contemporary take on traditional Vaastu, this course explores how modern principles can be integrated with age-old practices to create harmonious living environments.',
+        level: 'professional'
+      },
+      {
+        name: 'Predictive Vedic & Mobile Numerology',
+        imgSrc: 'https://ecourses.worldonvastu.com/wp-content/uploads/2024/09/Predictive-Vedic-Mobile-Numerology.png',
+        enrollLink: '',
+        desc: 'Combining the principles of Vedic traditions with numerology, this course teaches you how to make accurate predictions and gain insights into your future.',
+        level: 'professional'
+      },
+      {
+        name: 'Professional KP Astrology',
+        imgSrc: 'https://ecourses.worldonvastu.com/wp-content/uploads/2024/09/Professional-KP-Astrology.png',
+        enrollLink: '',
+        desc: 'This advanced course dives deep into Krishnamurti Paddhati (KP) Astrology, providing professional insights and techniques that empower you to make accurate predictions. Whether you are a seasoned astrologer or looking to refine your skills, this course will guide you through complex KP methodologies.',
+        level: 'professional'
+      },
+      {
+        name: 'Professional Lo Shu Grid Numerology',
+        imgSrc: 'https://ecourses.worldonvastu.com/wp-content/uploads/2024/09/Professional-Lo-Shu-Grid-Numerology.png',
+        enrollLink: '',
+        desc: 'This advanced course takes you through the intricacies of Lo Shu Grid Numerology, offering professional techniques to interpret and predict life patterns. It’s designed for those who want to offer numerology consultations.',
+        level: 'professional'
+      },
+      {
+        name: 'Professional Mobile Numerology',
+        imgSrc: 'https://ecourses.worldonvastu.com/wp-content/uploads/2024/09/Professional-Mobile-Numerology.png',
+        enrollLink: '',
+        desc: 'A unique course that combines the principles of numerology with modern technology. Learn how to analyze and interpret numbers associated with mobile phones to enhance your life and business.',
+        level: 'professional'
+      },
+      {
+        name: 'Energy Vaastu Protocol System',
+        imgSrc: 'https://ecourses.worldonvastu.com/wp-content/uploads/2024/09/Energy-Vaastu-Protocol-System.png',
+        enrollLink: '',
+        desc: 'Experience a Life-Changing Energy Shift Our Energy Vaastu Protocol System offers transformative techniques to refresh and energize your living or working space. Step By Step Guide On How To Become The Top 1% Energy Vaastu Consultant, Solve People Problems, Deliver Results And Earn 5 - 6 Figure Income!',
+        level: 'masters'
+      },
+    ]
+
+    const courseContainer = document.querySelector('#course .course-holder');
+    const tagsContainer = document.querySelector('.course-tags')
+    const tagsList = document.querySelectorAll('.course-tags .tags')
+
+    const renderCourse = (courses) => {
+      courseContainer.innerHTML = ""
+      courses.forEach(({ name, imgSrc, enrollLink, desc, level }) => {
+        let courseWrapper = document.createElement('div');
+        courseWrapper.classList.add('course-wrapper')
+        let course = document.createElement('div');
+        course.classList.add('course')
+
+        let imgHolder = document.createElement('div')
+        imgHolder.classList.add('img-holder');
+
+        let imageTag = document.createElement('img')
+        imageTag.src = imgSrc;
+        imageTag.alt = name;
+        imageTag.loading = 'lazy';
+        imgHolder.appendChild(imageTag);
+
+        let nameTag = document.createElement('p');
+        nameTag.classList.add('course-name');
+        nameTag.textContent = name;
+
+        let descTag = document.createElement('p');
+        descTag.classList.add('desc');
+        descTag.textContent = desc;
+
+        let linkTag = document.createElement('a');
+        linkTag.classList.add('btn');
+        linkTag.href = enrollLink
+        linkTag.textContent = 'Enroll Now';
+
+        course.appendChild(imgHolder)
+        course.appendChild(nameTag)
+        course.appendChild(descTag)
+        course.appendChild(linkTag)
+        courseWrapper.appendChild(course)
+
+        courseContainer.appendChild(courseWrapper)
+      });
+      ScrollReveal().sync();
+      // ScrollTrigger.refresh();
+    }
+
+    const removeTagHighlight = () => tagsList.forEach((tag) => tag.classList.remove('active'))
+
+    tagsContainer.addEventListener('click', (e) => {
+      if (e.target.tagName === 'SPAN') {
+        removeTagHighlight();
+        e.target.classList.add('active')
+        let filterName = e.target.textContent.toLowerCase();
+
+        if (filterName === 'all') {
+          renderCourse(coursesList);
+        } else {
+          let filteredCourse = coursesList.filter(({ level }) => filterName === level)
+          renderCourse(filteredCourse);
+        }
+      }
+    })
+
+
+    renderCourse(coursesList);
+
+    const config = {
+      interval: 60,
+      opacity: 0,
+      reset: false,
+      afterReveal: (el) => {
+        ScrollTrigger.refresh();
+      }
+    }
+    ScrollReveal().reveal('.course-holder .course-wrapper', {
+      ...config
+    });
+
+    // ----------- Testimonials Slider JS Functions ---------
+
+    const splide3 = new Splide("#image-carouse3", {
+      type: "loop",
+      perPage: 3,
+      focus: "center",
+      autoplay: "playing",
+      gap: '24px',
+      breakpoints: {
+        1200: {
+          perPage: 1
+        },
+      }
+    });
+    splide3.mount();
+
+    // -----------About Section Counter JS Functions ---------
+
+    const about = document.getElementById('about-us')
+    const counterData = document.querySelectorAll('.number-data');
+    let activated = false;
+
+    window.addEventListener('scroll', () => {
+      if (scrollY > about.offsetTop - 100 && activated == false) {
+        counterData.forEach(e => {
+          let target = parseInt(e.dataset.count);
+          let count = 0;
+
+          let countUpdate = () => {
+            if (count < target) {
+              if (target <= 30) {
+                count++;
+                e.innerText = count + '+';
+                setTimeout(countUpdate, 100)
+              }
+              else if (target <= 100) {
+                count += 5;
+                e.innerText = count + '+';
+                setTimeout(countUpdate, 50)
+              }
+              else {
+                count += 100;
+                e.innerText = count + '+';
+                setTimeout(countUpdate, 30)
+              }
+
+
+            }
+            else {
+              e.innerText = target + '+';
+            }
+
+            activated = true;
+
+          }
+          countUpdate();
+        })
+
+      }
+    })
+
+    // ----------- FAQ JS Functions --------- //
+
+    const faqsQuestion = document.querySelectorAll('.faq .question');
+
+    faqsQuestion.forEach(e => {
+      e.addEventListener('click', () => {
+        let element = e.nextElementSibling;
+        let currentHeight = element.style.height;
+        let isCollapsed = currentHeight === '' || currentHeight === '0px';
+        element.style.height = isCollapsed ? `${element.scrollHeight}px` : '0px';
+      })
+
+    });
+
+    // ----------- Footer Date Function --------- //
+    const date = new Date()
+    document.getElementById('year').textContent = date.getFullYear();
+  });
+
+</script>
+
+<!-- Animation Js -->
+<script type="text/javascript">
+  document.addEventListener('DOMContentLoaded', () => {
+
+    const sentences = [
+      'ACMOS Lecher Antenna.',
+      "Energy Vaastu Protocol System.",
+      "Modern Vaastu.",
+      "Professional AstroVaastu.",
+      "Professional KP Astrology.",
+      "Professional Numerology."
+    ]
+
+    const textCutter = () => {
+
+      const container = document.querySelector('.animated-text-holder');
+      let clutter = "";
+
+      sentences.forEach((text, id) => {
+        const h2 = document.createElement('h2');
+        h2.classList.add(`animated-text`);
+        h2.classList.add(`animated-text-${id}`);
+
+        let char = text.split("").map(char => {
+          const span = document.createElement('span');
+          span.classList.add('word');
+          span.innerText = char === ' ' ? '\u00A0' : char;
+          h2.appendChild(span);
+        });
+        container.appendChild(h2)
+      })
+    }
+
+    const animateText = () => {
+      textCutter()
+      const list = document.querySelectorAll(".animated-text");
+      let tl = gsap.timeline({
+        repeat: -1
+      });
+
+      list.forEach((tag, index) => {
+        if (index >= 0) {
+          tl.from(`.${tag.classList[1]} .word`, {
+            yPercent: 100,
+            rotationX: 90,
+            opacity: 0,
+            stagger: {
+              amount: 0.4
+            },
+            duration: 0.7,
+            ease: "back.out(1.7)"
+          },
+            "<0.1"
+          );
+        }
+        if (index <= list.length - 1) {
+          tl.to(`.${tag.classList[1]} .word`, {
+            delay: 1,
+            yPercent: -100,
+            rotationX: -90,
+            opacity: 0,
+            stagger: {
+              amount: 0.4
+            },
+            duration: 0.7,
+            ease: "back.out(1.7)"
+          });
+        }
+      });
+    }
+
+    const animateVideoBackground = () => {
+
+      let start = 'top 10%'
+      let end = 'top -100%'
+
+      const createScrollTrigger = () => {
+        gsap.to('#video-section .background-element', {
+          top: 0,
+          borderRadius: 0,
+          scrollTrigger: {
+            trigger: "#video-section",
+            scroller: 'body',
+            start: start,
+            end: end,
+            markers: false,
+            scrub: 1
+          }
+        })
+      }
+
+      ScrollTrigger.matchMedia({
+        '(min-width:1000px)': function () {
+          start = 'top 10%'
+          end = 'top -100%'
+          createScrollTrigger();
+
+        },
+        '(max-width:1000px)': function () {
+          start = 'top 90%';
+          end = 'top 0%';
+          createScrollTrigger();
+        }
+      })
+    }
+
+
+    const tagsAnimation = () => {
+
+      let duration = .3;
+      let ease = "back.out(1.7)";
+
+      const scrollTriggerConfig = {
+        scroller: 'body',
+        start: "top 100%",
+        end: "top 20%",
+        scrub: 1,
+        // markers: true,
+      }
+
+      gsap.utils.toArray('.left .tag').forEach(tag => {
+        gsap.fromTo(tag,
+          {
+            opacity: 0,
+            x: -50,
+            y: 50
+          },
+          {
+            opacity: 1,
+            x: 0,
+            y: 0,
+            duration: duration,
+            ease: ease,
+            scrollTrigger: {
+              trigger: tag,
+              ...scrollTriggerConfig
+            }
+          }
+        );
+      })
+
+      gsap.utils.toArray('.right .tag').forEach(tag => {
+        gsap.fromTo(tag,
+          {
+            opacity: 0,
+            x: 50,
+            y: 50
+          },
+          {
+            opacity: 1,
+            x: 0,
+            y: 0,
+            duration: duration,
+            ease: ease,
+            scrollTrigger: {
+              trigger: tag,
+              ...scrollTriggerConfig
+            }
+          }
+        );
+      })
+
+    }
+
+    tagsAnimation();
+
+
+    // Function Calls
+
+    animateText()
+    animateVideoBackground()
+  })
+</script>
+
+</html>
